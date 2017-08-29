@@ -3,3 +3,66 @@
 ---
 
 @import "minima";
+@import "partials/transitions";
+
+$orange: #f9673d;
+$blue: #3536cc;
+$navy: #00006c;
+$off-white: #f5f1f1;
+$grey: #c4b7b5;
+$green: #0a7e5e;
+$yellow: #ffd150;
+
+$body-font-family: "Rubik", sans-serif;
+$header-font-family: "Zilla Slab", serif;
+
+body {
+  margin:0 auto;
+  font-family: $body-font-family;
+  color: $navy;
+  background: $off-white;
+}
+
+.bwc-header {
+  background: $orange;
+  min-height: 80vh;
+  width: 100%;
+}
+
+#hero {
+  text-align: center;
+
+  #logo {
+    margin-top: 20vh;
+    width: 25vw;
+    min-width:20rem;
+  }
+
+  /*p { 
+    margin: 0 auto;
+    width: 20vw;
+    min-width: 18rem;
+  }*/
+}
+
+.section-text {
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 20vw;
+  min-width: 18rem;
+}
+
+button {
+  @include transition(font-size .25s);
+  color: $navy;
+  border: 3px solid $navy;
+  background: $off-white;
+  padding: 1rem;
+  font-family: $body-font-family;
+}
+
+button:hover {
+  cursor: pointer;
+  font-size: $base-font-size * 1.1;
+}

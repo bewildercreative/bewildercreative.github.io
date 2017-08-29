@@ -4,23 +4,34 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Services</h1>
   
-  {{ content }}
+  <!--{{ content }}-->
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for small-module in site.services %}
       <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {{ small-module.title | escape }}
         </h2>
+
+        <p>
+          {{ small-module.text | escape }}
+        </p>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <ul class="post-list">
+    {% for side-module in site.team %}
+      <li>
+        <p>
+          {{ side-module.text | escape }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
 
 </div>
