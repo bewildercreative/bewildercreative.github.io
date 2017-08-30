@@ -1,9 +1,9 @@
 ---
 layout: small-module
-title:  "Website Design"
+title:  "Branding"
 text: "We make cool designs and stuff."
+image: "../assets/images/off-beat.png"
 ---
-We make cool designs and stuff.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

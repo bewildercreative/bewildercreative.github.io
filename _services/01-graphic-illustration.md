@@ -1,7 +1,8 @@
 ---
 layout: small-module
-title:  "Branding"
+title:  "Graphic Illustration"
 text: "We make cool designs and stuff."
+image: "../assets/images/woke.png"
 ---
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

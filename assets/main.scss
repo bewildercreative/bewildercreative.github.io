@@ -2,19 +2,14 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+//@import "minima";
+//@import 'jeet/scss/index';
+@import 'simple-grid';
+@import "partials/base";
 @import "partials/transitions";
-
-$orange: #f9673d;
-$blue: #3536cc;
-$navy: #00006c;
-$off-white: #f5f1f1;
-$grey: #c4b7b5;
-$green: #0a7e5e;
-$yellow: #ffd150;
-
-$body-font-family: "Rubik", sans-serif;
-$header-font-family: "Zilla Slab", serif;
+@import "partials/footer";
+@import "partials/typography";
+@import "partials/small-module";
 
 body {
   margin:0 auto;
@@ -26,11 +21,14 @@ body {
 .bwc-header {
   background: $orange;
   min-height: 80vh;
+}
+
+.bwc-section {
   width: 100%;
+  text-align:center;
 }
 
 #hero {
-  text-align: center;
 
   #logo {
     margin-top: 20vh;
@@ -45,13 +43,12 @@ body {
   }*/
 }
 
-.section-text {
+/*.inline-buttons {
   margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  width: 20vw;
-  min-width: 18rem;
-}
+  width: 40vw;
+  height:auto;
+  background: black;
+}*/
 
 button {
   @include transition(font-size .25s);
@@ -60,9 +57,16 @@ button {
   background: $off-white;
   padding: 1rem;
   font-family: $body-font-family;
-}
+  margin-top: 1rem;
+  min-width: 10rem;
+  font-size: $base-font-size * 1;
 
-button:hover {
-  cursor: pointer;
-  font-size: $base-font-size * 1.1;
+  &:hover {
+    cursor: pointer;
+    font-size: $base-font-size * 1.1;
+  }
+
+  &.highlight {
+    background: $orange;
+  }
 }

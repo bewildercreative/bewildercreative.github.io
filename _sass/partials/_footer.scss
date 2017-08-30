@@ -1,0 +1,29 @@
+@import "base";
+
+.bwc-footer {
+  min-height: 80vh;
+  background: $grey; 
+  /*background-image: url('../../assets/images/footer-dirt.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom; */
+}
+
+.copyright {
+  margin: 0 auto;
+  color: $off-white;
+  width:50vw;
+
+  p {
+    display: inline-block;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "base";
+
+$module-height: 15rem;
+$module-width: 100%;
+$module-padding: 1rem;
+$module-image-dim: 14rem;
+$module-margin-top: -($module-image-dim / 2);
+$module-line-height: 0.5rem;
+
+.small-module {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .module-text {
+    margin: 0 auto;
+    margin-top: $module-margin-top;
+    //padding: $module-padding;
+    padding-top: abs( $module-margin-top ) + 1;
+    height: $module-height;
+    background: $grey;
+    max-width: 17rem;
+    z-index: 1;
+  }
+
+  .module-line {
+    margin: 0 auto;
+    margin-top: $module-line-height;
+    margin-bottom: 1rem;
+    height: $module-line-height;
+    background: $blue;
+    width: 100%;
+    max-width: 17rem;
+  }
+}
+
+.module-image {
+  margin: 0 auto;
+  position: relative;
+  top: -10;
+  width: $module-image-dim;
+  height: $module-image-dim;
+  background: $green;
+  z-index: 3;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,8 +1,10 @@
 ---
 layout: small-module
-title:  "Graphic Illustration"
+title:  "Website Design"
 text: "We make cool designs and stuff."
+image: "../assets/images/nurturing.png"
 ---
+We make cool designs and stuff.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
