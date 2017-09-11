@@ -9,7 +9,7 @@ $half-page-margin: 0.75rem;
   background: $grey;
 
   .content {
-    min-height: 45vh;
+    min-height: 60vh;
     display: -webkit-inline-flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -45,6 +45,10 @@ footer {
 
 @media only screen and (max-width: 1366px) and (orientation: landscape){ 
   .contact {
+    .content {
+      min-height: 50vh;
+    }
+
     header {
       margin-top: -3rem;
     }
