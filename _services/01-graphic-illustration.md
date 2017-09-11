@@ -1,10 +1,6 @@
 ---
 layout: small-module
 title:  "Graphic Illustration"
-text: "We make cool designs and stuff."
-image: "../assets/images/woke.png"
+text: "Bring in a splash of uniqueness."
+image: ""
 ---
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/

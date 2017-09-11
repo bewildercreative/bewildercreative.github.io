@@ -1,0 +1,61 @@
+@import "base";
+
+/* TO-DO
+ - figure out why blue line margin-top is inconsistent with small-module's
+ - how to make nth-child(even) work
+ - mobile breakpoints
+ - fix icon position
+*/ 
+
+/*$module-image-dim: 14vw;
+$module-image-min-dim: 11rem;
+$module-line-height: 0.5rem;
+
+.side-module {
+  list-style-type: none;
+  padding: 0;
+
+  .module-text {
+    margin: 0 auto;
+    padding: 0;
+    background: $grey;
+    min-height: 15rem;
+    width: 50%;
+    min-width: 22rem;
+    margin-bottom: 3rem;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+
+    p {
+      //line-height: 15rem;
+    }
+  }
+
+  /*li.module-text:nth-child(even) {
+    padding: 0;
+    padding-right: 15rem;
+  }*/
+
+  /*.module-line {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: $module-line-height;
+    height: $module-line-height;
+    background: $blue;
+    width: 100%;
+  }*/
+
+  /*.module-image {
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: 15rem;
+    width: $module-image-dim;
+    width: $module-image-min-dim;
+    height: $module-image-dim;
+    height: $module-image-min-dim;
+    background: $navy;
+    z-index: 3;
+    border-radius: 50%;
+  }
+}*/

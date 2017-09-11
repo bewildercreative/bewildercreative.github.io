@@ -1,0 +1,42 @@
+@import "base";
+
+button {
+  //@include transition(font-size .25s);
+  @include transition(background .25s, border .25s);
+  color: $blue;
+  border: 3px solid $blue;
+  background: $off-white;
+  padding: 1rem;
+  font-family: $body-font-family;
+  margin-top: 1rem;
+  min-width: 12rem;
+  //font-size: $base-font-size * 1;
+
+  &:hover {
+    cursor: pointer;
+    background: $navy;
+    border: 3px solid $navy;
+    color: $yellow;
+    //font-size: $base-font-size * 1.1;
+  }
+
+  &.highlight {
+    background: $orange;
+    color: $navy;
+    border: 3px solid $orange;
+  }
+
+  &.highlight:hover {
+    cursor: pointer;
+    //font-size: $base-font-size * 1.1;
+    background: $navy;
+    border: 3px solid $navy;
+    color: $yellow;
+  }
+
+  &:active {
+    background: $navy;
+    border: 3px solid $navy;
+    color: $yellow;
+  }
+}

@@ -2,25 +2,42 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+/* TO DO
+- why is paragraph text not centered (DONE for now)
+- hero mobile sizes
+*/
+
 //@import "minima";
 //@import 'jeet/scss/index';
-@import 'simple-grid';
+//@import 'simple-grid';
 @import "partials/base";
 @import "partials/transitions";
-@import "partials/footer";
+@import "partials/button";
+//@import "partials/footer";
 @import "partials/typography";
 @import "partials/small-module";
+//@import "partials/side-module";
 
 body {
+  margin: 0 auto;
+  background: $off-white;
+}
+
+/*body {
   margin:0 auto;
   font-family: $body-font-family;
   color: $navy;
   background: $off-white;
 }
 
+::selection {
+    background-color: $yellow;
+    color: $navy;
+}
+
 .bwc-header {
-  background: $orange;
-  min-height: 80vh;
+  height: 90vh;
+  max-height: 60rem;
 }
 
 .bwc-section {
@@ -41,7 +58,7 @@ body {
     width: 20vw;
     min-width: 18rem;
   }*/
-}
+//}
 
 /*.inline-buttons {
   margin: 0 auto;
@@ -50,23 +67,28 @@ body {
   background: black;
 }*/
 
-button {
-  @include transition(font-size .25s);
-  color: $navy;
-  border: 3px solid $navy;
-  background: $off-white;
-  padding: 1rem;
-  font-family: $body-font-family;
-  margin-top: 1rem;
-  min-width: 10rem;
-  font-size: $base-font-size * 1;
-
-  &:hover {
-    cursor: pointer;
-    font-size: $base-font-size * 1.1;
+/*@media only screen and (max-height: 1266px) and (orientation: portrait){
+  .bwc-header {
+    //height: 60vh;
+    max-height: 40rem;
   }
 
-  &.highlight {
-    background: $orange;
+  #hero {
+    #logo {
+      margin-top: 15vh;
+    }
   }
-}
+}*/
+
+/*@media only screen and (max-height: 1024px){
+  .bwc-header {
+    //height: 60vh;
+    max-height: 40rem;
+  }
+
+  #hero {
+    #logo {
+      margin-top: 15vh;
+    }
+  }
+}*/

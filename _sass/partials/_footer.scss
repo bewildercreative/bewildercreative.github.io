@@ -1,18 +1,38 @@
 @import "base";
 
-.bwc-footer {
-  min-height: 80vh;
-  background: $grey; 
-  /*background-image: url('../../assets/images/footer-dirt.png');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: bottom; */
+/* TO DO
+- copyright div expands when keyboard is being used
+- mobile section sizes
+*/
+
+
+.contact {
+  height: 70vh;
+  background: $grey;
+  //overflow: hidden;
+
+  .section-text {
+  }
+
+  button {
+    margin: 0.5rem;
+  }
+
+  img {
+    width: 45vw;
+    min-width: 40rem;
+    padding-top: -2rem;
+  }
 }
 
 .copyright {
   margin: 0 auto;
-  color: $off-white;
-  width:50vw;
+  color: $navy;
+  width:100%;
+  text-align: center;
+  background: $off-white;
+  position: absolute;
+  bottom: 0;
 
   p {
     display: inline-block;

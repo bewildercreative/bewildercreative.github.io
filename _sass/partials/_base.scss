@@ -2,9 +2,18 @@ $orange: #f9673d;
 $blue: #3536cc;
 $navy: #00006c;
 $off-white: #f5f1f1;
-$grey: #c4b7b5;
+$grey: #e0D3d1;
 $green: #0a7e5e;
-$yellow: #ffd150;
+//$yellow: #ffd150;
+$yellow: #ffd773;
 
 $body-font-family: "Rubik", sans-serif;
 $header-font-family: "Zilla Slab", serif;
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
