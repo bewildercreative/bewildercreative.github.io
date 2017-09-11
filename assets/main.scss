@@ -13,10 +13,12 @@
 @import "partials/base";
 @import "partials/transitions";
 @import "partials/button";
-@import "partials/footer";
 @import "partials/typography";
+@import "partials/footer";
 @import "partials/small-module";
 //@import "partials/side-module";
+
+$section-margin-bottom: 5rem;
 
 body {
   margin: 0 auto;
@@ -27,12 +29,44 @@ body {
 
 section {
   width: 100%;
+  margin-bottom: $section-margin-bottom;
+}
+
+header#hero {
+  width: 100%;
+}
+
+#hero {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+
+  img {
+    max-width: 22rem;
+  }
 }
 
 ::selection {
     background-color: $yellow;
     color: $navy;
 }
+
+@media only screen and (max-width: 1024px) { 
+  #hero {
+    height: 60vh;
+    min-height: 45rem;
+  }
+}
+
+@media only screen and (max-width: 736px) { 
+  #hero {
+    height: 100vh;
+    min-height: 35rem;
+  }
+}
+
 
 /*body {
   margin:0 auto;
