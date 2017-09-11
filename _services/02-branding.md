@@ -1,6 +1,6 @@
 ---
 layout: small-module
-title:  "Branding"
+title:  "Logo and Branding"
 text: "Let your personality shine."
 image: ""
 ---

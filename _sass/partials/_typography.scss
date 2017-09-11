@@ -4,11 +4,13 @@
 - scale fonts better
 */
 
+$base-font-size: 1rem;
+
 body {
   font-family: $body-font-family;
   color: $navy;
   text-align: center;
-  font-size: 1rem;
+  font-size: $base-font-size;
 }
 
 h1 {
@@ -16,10 +18,15 @@ h1 {
   font-weight: normal;
   font-style: italic;
   font-size: 2.5rem;
+  margin-bottom: -0.5rem;
 }
 
 h3 {
   font-weight: 500;
+}
+
+button {
+  font-size: $base-font-size;
 }
 
 /*@import "../simple-grid";

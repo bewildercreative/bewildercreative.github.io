@@ -13,14 +13,25 @@
 @import "partials/base";
 @import "partials/transitions";
 @import "partials/button";
-//@import "partials/footer";
+@import "partials/footer";
 @import "partials/typography";
 @import "partials/small-module";
 //@import "partials/side-module";
 
 body {
   margin: 0 auto;
+  padding: 0;
+  width: 100%;
   background: $off-white;
+}
+
+section {
+  width: 100%;
+}
+
+::selection {
+    background-color: $yellow;
+    color: $navy;
 }
 
 /*body {

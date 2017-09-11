@@ -1,12 +1,82 @@
 @import "base";
 
+$button-margin: 0.25rem;
+$half-page-width: 45%;
+$half-page-min-width: 20rem;
+$half-page-margin: 0.75rem;
+
+.contact {
+  background: $grey;
+
+  .content {
+    min-height: 45vh;
+    display: -webkit-inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0;
+  }
+
+  button {
+    margin: $button-margin;
+  }
+}
+
+.half-page {
+  width: $half-page-width;
+  min-width: $half-page-min-width;
+  //background: white;
+  margin: $half-page-margin;
+}
+
+footer {
+  max-height: 10rem;
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape){ 
+  .contact {
+    header {
+      margin-top: -3rem;
+    }
+  } 
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    .content {
+      min-height: 40vh;
+    }
+
+    header {
+      margin-top: 0rem;
+    }
+  }
+
+  .half-page {
+    width: 48%;
+    min-width: $half-page-min-width;
+    //background: white;
+    margin: $half-page-margin;
+  } 
+}
+
 /* TO DO
 - copyright div expands when keyboard is being used
 - mobile section sizes
 */
 
 
-.contact {
+/*.contact {
   height: 70vh;
   background: $grey;
   //overflow: hidden;
@@ -46,4 +116,4 @@
       display: inline-block;
     }
   }
-}
+}*/
