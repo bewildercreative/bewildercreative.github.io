@@ -14,14 +14,12 @@ layout: default
 
       <ul class="small-module">
         {% for small-module in site.services %}
-          <div>
-            <li>
-              <div class="icon" style="background-image: url({{ small-module.image }})" />
+          <li>
+            <div class="icon" style="background-image: url({{ small-module.image }})" />
 
-              <h3>{{ small-module.title | escape }}</h3>
-              <p>{{ small-module.text | escape }}</p>
-            </li>
-          </div>
+            <h3>{{ small-module.title | escape }}</h3>
+            <p>{{ small-module.text | escape }}</p>
+          </li>
         {% endfor %}
       </ul>
 
@@ -30,31 +28,32 @@ layout: default
 
   </section>
 
-  <section>
+  <section id="team">
     <header>
       <h1>Three women, three talents</h1>
       <p>Three's a magic number, after all.</p>
     </header>
-  </section>
 
-  <div class="content">
+    <div class="content">
 
       <ul class="side-module">
         {% for side-module in site.team %}
           <li>
+            <p>
+              {{ side-module.text | escape }}
+            </p>
 
-            <div class="module-image" />
+            <div class="icon" style="background-image: url({{ small-module.image }})" />
 
-            <div class="module-text">
+            <!--<div class="module-text">
               <p>
                 {{ side-module.text | escape }}
               </p>
-            </div>
-
-            <div class="module-line" />
+            </div>-->
           </li>
         {% endfor %}
       </ul>
 
-  </div>
+    </div>
+  </section>
 </div>

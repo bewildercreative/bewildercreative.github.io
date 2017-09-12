@@ -1,5 +1,127 @@
 @import "base";
 
+$icon-size: 12rem;
+$module-height: 15rem;
+$module-width: 20%;
+$module-min-width: 13rem;
+$module-padding: 1rem;
+$module-margin: 0.75rem;
+$module-margin-top: ($icon-size / 2);
+$module-padding-top: ($icon-size / 2) - 1;
+$module-text-padding-top: ($icon-size + 1);
+
+#team { 
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: $grey;
+    width: 70%;
+    height: 13rem;
+    margin-bottom: 1rem;
+
+    p {
+      width: 65%;
+      min-width: 12rem;
+      text-align: left;
+      padding-left: 8rem;
+    }
+  }
+
+  /*.icon {
+    min-width: $icon-size;
+    min-height: $icon-size;
+    background: $navy;
+    border-radius: 50%;
+    margin-left: -93%;
+  }*/
+
+  /*li:nth-item(even) {
+    align-items: flex-end;
+  }*/
+}
+
+/*#team {
+  //background: blue;
+
+  ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    width: 75%;
+    //background: black;
+  }
+
+  li {
+
+    .module-text {
+      padding: 0;
+      width: 75%;
+      min-width: 35rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-top: 1rem;
+      background: $grey;
+      z-index: 1;
+    }
+
+    .icon { 
+      margin: 0 auto; 
+      position: relative;
+      width: $icon-size;
+      height: $icon-size;
+      background: #000076;
+      border-radius: 50%;
+      z-index: 3;
+    }
+  }
+
+  li:nth-child(even) {
+    .module-text {
+      margin-left: auto;
+    }
+
+    p {
+      margin-left: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 736px) { 
+  #team {
+    .content {
+      width: 100%;
+    }
+
+    ul {
+      width: 100%;
+    }
+
+    li {
+
+      .module-text {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        min-width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 83%;
+        text-align: center;
+      }
+    }
+  }
+}*/
+
 /* TO-DO
  - figure out why blue line margin-top is inconsistent with small-module's
  - how to make nth-child(even) work

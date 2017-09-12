@@ -2,9 +2,10 @@
 
 /* TO DO
 - scale fonts better
+- fix header widths on mobile
 */
 
-$base-font-size: 1rem;
+$base-font-size: 0.95rem;
 
 body {
   font-family: $body-font-family;
@@ -17,7 +18,7 @@ h1 {
   font-family: $header-font-family;
   font-weight: normal;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-bottom: -0.5rem;
 }
 

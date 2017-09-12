@@ -6,8 +6,8 @@
 
 $icon-size: 11rem;
 $module-height: 15rem;
-$module-width: 20%;
-$module-min-width: 13rem;
+$module-width: 18%;
+$module-min-width: 12rem;
 $module-padding: 1rem;
 $module-margin: 0.75rem;
 $module-margin-top: ($icon-size / 2);
@@ -15,45 +15,47 @@ $module-padding-top: ($icon-size / 2) - 1;
 $module-text-padding-top: ($icon-size + 1);
 
 
-#services ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-inline-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+#services { 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-#services li {
-  width: $module-width;
-  min-width: $module-min-width;
-  height: $module-height;
-  padding: $module-padding;
-  margin: $module-margin;
-  background: $grey;
-  margin-top: $module-margin-top; 
-  padding-top: $module-padding-top; 
-  z-index: 1;
-}
+  li {
+    width: $module-width;
+    min-width: $module-min-width;
+    height: $module-height;
+    padding: $module-padding;
+    margin: $module-margin;
+    background: $grey;
+    margin-top: $module-margin-top; 
+    padding-top: $module-padding-top; 
+    z-index: 1;
+  }
 
-#services h3 {
-  padding-top: $module-text-padding-top; 
-}
+  h3 {
+    padding-top: $module-text-padding-top; 
+  }
 
-#services .icon {
-  margin: 0 auto;
-  position: relative;
-  margin-top: -$icon-size;
-  width: $icon-size;
-  height: $icon-size;
-  background: #000076;
-  border-radius: 50%;
-  z-index: 3;
+  .icon {
+    margin: 0 auto;
+    position: relative;
+    margin-top: -$icon-size;
+    width: $icon-size;
+    height: $icon-size;
+    background: #000076;
+    border-radius: 50%;
+    z-index: 3;
+  }
 }
 
 /* TO DO
