@@ -22,30 +22,43 @@ $module-text-padding-top: ($icon-size + 1);
     //background: blue;
   }
 
+  .icon-container {
+    height: 14rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .icon {
+    position: absolute;
+    right: 45rem;
+    //margin-left: 32%;
+    width: 14rem;
+    height: 14rem;
+    background: $navy;
+    border-radius: 50%;
+  }
+
   li {
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     width: 100%;
     //background: white;
 
-    .icon-container {
-    }
 
     .module-text {
       margin-left: auto;
       display: -webkit-flex;
       display: flex;
       align-items: center;
-      width: 65%;
+      width: 50rem;
       height: 14rem;
       background: $grey;
       text-align: left;
     }
 
     p {
-      width: 55%;
-      padding-left: 3rem;
+      width: 50%;
+      padding-left: 8rem;
     }
   }
 
@@ -57,7 +70,101 @@ $module-text-padding-top: ($icon-size + 1);
 
     p {
       margin-left: auto;
-      padding-right: 3rem;
+      padding-right: 8rem;
+    }
+
+    .icon {
+      left: 45rem;
+      //margin-left: 52%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) { 
+  #team { 
+    .icon {
+      right: 35rem;
+    }
+
+    li {
+      .module-text {
+        width: 40rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        left: 35rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) { 
+  #team {
+    .icon {
+      right: 25rem;
+    }
+
+    li {
+      .module-text {
+        width: 30rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        left: 25rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) { 
+  #team { 
+    .icon {
+      right: 18rem;
+    }
+
+    li {
+      .module-text {
+        width: 25rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        left: 18rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) { 
+  #team {
+    .icon {
+      right: 13rem;
+    }
+
+    li {
+      .module-text {
+        width: 20rem;
+      }
+
+      p {
+        padding-left: 8rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        left: 13rem;
+      }
+
+      p {
+        padding-left: 0;
+        padding-right: 8rem;
+      }
     }
   }
 }
