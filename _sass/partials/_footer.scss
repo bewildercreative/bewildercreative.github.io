@@ -34,6 +34,15 @@ section.contact {
   button {
     margin: $button-margin;
   }
+
+  .contact-buttons {
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-width: 20rem;
+  }
 }
 
 .half-page {
@@ -63,6 +72,13 @@ footer {
   .contact {
     .content {
       min-height: 40vh;
+      -webkit-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+
+      img {
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+      }
     }
 
     header {
