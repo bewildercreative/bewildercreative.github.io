@@ -40,13 +40,15 @@ layout: default
         {% for side-module in site.team %}
           <li>
             <div class="icon-container">
-              <div class="icon" style="background-image: url({{ small-module.image }})" />
+              <div class="icon" id="{{side-module.title | escape }}-icon" style="background-image: url({{ side-module.image }})" />
             </div>
             
             <div class="module-text">
               <p>
                 {{ side-module.text | escape }}
               </p>
+
+              <button>{{ side-module.title | escape }}'s Portfolio</button>
             </div>
             
           </li>

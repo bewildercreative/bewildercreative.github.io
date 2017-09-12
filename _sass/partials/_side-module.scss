@@ -35,12 +35,27 @@ $module-text-padding-top: ($icon-size + 1);
     height: 14rem;
     background: $navy;
     border-radius: 50%;
+
+    background-size: 10.5rem;
+    background-repeat: no-repeat;
+    background-position: 50% 2.5rem;
+  }
+
+  #Janny-icon {
+    background-size: 11rem;
+    background-position: 75% 2.25rem;
+  }
+
+  button {
+    position: absolute;
+    margin-top: 7rem;
+    right: 25rem;
   }
 
   li {
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
     width: 100%;
     //background: white;
 
@@ -77,6 +92,10 @@ $module-text-padding-top: ($icon-size + 1);
       left: 45rem;
       //margin-left: 52%;
     }
+
+    button {
+      left: 25rem;
+    }
   }
 }
 
@@ -84,6 +103,10 @@ $module-text-padding-top: ($icon-size + 1);
   #team { 
     .icon {
       right: 35rem;
+    }
+
+    button {
+      right: 20rem;
     }
 
     li {
@@ -96,6 +119,10 @@ $module-text-padding-top: ($icon-size + 1);
       .icon {
         left: 35rem;
       }
+
+      button {
+        left: 20rem;
+      }
     }
   }
 }
@@ -104,6 +131,10 @@ $module-text-padding-top: ($icon-size + 1);
   #team {
     .icon {
       right: 25rem;
+    }
+
+    button {
+      right: 5rem;
     }
 
     li {
@@ -116,31 +147,52 @@ $module-text-padding-top: ($icon-size + 1);
       .icon {
         left: 25rem;
       }
+
+      button {
+        left: 5rem;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 568px) { 
+@media only screen and (max-width: 585px) { 
   #team { 
     .icon {
-      right: 18rem;
+      right: 16rem;
+    }
+
+    button {
+      right: 2rem;
     }
 
     li {
       .module-text {
         width: 25rem;
       }
+
+      p {
+        padding-left: 10rem;
+      }
     }
 
     li:nth-child(even) {
       .icon {
-        left: 18rem;
+        left: 16rem;
+      }
+
+      button {
+        left: 2rem;
+      }
+
+      p {
+        padding-left: 0rem;
+        padding-right: 10rem;
       }
     }
   }
 }
 
-@media only screen and (max-width: 412px) { 
+@media only screen and (max-width: 446px) { 
   #team {
     .icon {
       right: 13rem;
@@ -164,6 +216,74 @@ $module-text-padding-top: ($icon-size + 1);
       p {
         padding-left: 0;
         padding-right: 8rem;
+      }
+    }
+  }
+}
+
+/*@media only screen and (max-width: 411px) { 
+  #team {
+    .icon {
+      margin-top: -10rem;
+      //right: 10rem;
+      //top: -5rem;
+    }
+
+    button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    li {
+      padding-top: 10rem;
+
+      .module-text {
+        width: 100%;
+      }
+
+      p {
+        width: 100%;
+        padding-left: -6rem;
+        //padding-left: 9rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        //left: 10rem;
+      }
+
+      p {
+        //padding-right: 9rem;
+      }
+    }
+  }
+}*/
+
+@media only screen and (max-width: 411px) { 
+  #team {
+    .icon {
+      right: 10rem;
+    }
+
+    li {
+      .module-text {
+        width: 18rem;
+      }
+
+      p {
+        padding-left: 9rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        left: 10rem;
+      }
+
+      p {
+        padding-left: 0;
+        padding-right: 9rem;
       }
     }
   }
