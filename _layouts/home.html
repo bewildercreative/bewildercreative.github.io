@@ -39,17 +39,16 @@ layout: default
       <ul class="side-module">
         {% for side-module in site.team %}
           <li>
-            <p>
-              {{ side-module.text | escape }}
-            </p>
-
-            <div class="icon" style="background-image: url({{ small-module.image }})" />
-
-            <!--<div class="module-text">
+            <div class="icon-container">
+              <div class="icon" style="background-image: url({{ small-module.image }})" />
+            </div>
+            
+            <div class="module-text">
               <p>
                 {{ side-module.text | escape }}
               </p>
-            </div>-->
+            </div>
+            
           </li>
         {% endfor %}
       </ul>
