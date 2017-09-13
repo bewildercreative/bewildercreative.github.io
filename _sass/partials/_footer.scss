@@ -5,6 +5,8 @@ $half-page-width: 45%;
 $half-page-min-width: 20rem;
 $half-page-margin: 0.75rem;
 
+$base-img-size: 20rem;
+
 section.contact {
   margin-bottom: 0rem;
 }
@@ -41,7 +43,7 @@ section.contact {
   }
 
   img {
-    max-width: 20rem;
+    max-width: $base-img-size;
   }
 }
 
@@ -53,6 +55,36 @@ section.contact {
 
 footer {
   max-height: 10rem;
+}
+
+@media only screen and (max-width: 2560px) {
+  .contact {
+    .content {
+      img {
+        max-width: $base-img-size * $xxl-multiplier;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .contact {
+    .content {
+      img {
+        max-width: $base-img-size * $xl-multiplier;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .contact {
+    .content {
+      img {
+        max-width: $base-img-size;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1366px) and (orientation: landscape){ 

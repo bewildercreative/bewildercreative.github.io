@@ -1,42 +1,95 @@
 @import "base";
+@import "typography";
 
-button {
-  //@include transition(font-size .25s);
-  @include transition(background .25s, border .25s);
-  color: $blue;
-  border: 3px solid $blue;
-  background: $off-white;
-  padding: 1rem;
-  font-family: $body-font-family;
-  margin-top: 1rem;
-  min-width: 12rem;
-  //font-size: $base-font-size * 1;
+$base-px: 3px;
+$xl-px: 4px;
+$xxl-px: 5px;
 
-  &:hover {
-    cursor: pointer;
-    background: $navy;
-    border: 3px solid $navy;
-    color: $yellow;
-    //font-size: $base-font-size * 1.1;
+@media only screen and (max-width: 2560px) {
+  button {
+    @include transition(background .25s, border .25s);
+    color: $blue;
+    background: $off-white;
+    font-family: $body-font-family;
+    padding: 1rem * $xxl-multiplier;
+    margin-top: 1rem;
+    min-width: 12rem;
+    border: $xxl-px solid $blue;
+
+    &:hover {
+      cursor: pointer;
+      background: $navy;
+      border: $xxl-px solid $navy;
+      color: $yellow;
+    }
+
+    &.highlight {
+      background: $orange;
+      color: $off-white;
+      border: $xxl-px solid $orange;
+    }
+
+    &.highlight:hover {
+      cursor: pointer;
+      background: $navy;
+      border: $xxl-px solid $navy;
+      color: $yellow;
+    }
+
+    &:active {
+      background: $navy;
+      border: $xxl-px solid $navy;
+      color: $yellow;
+    }
   }
+}
 
-  &.highlight {
-    background: $orange;
-    color: $off-white;
-    border: 3px solid $orange;
+@media only screen and (max-width: 1920px) {
+  button {
+    padding: 1rem * $xl-multiplier;
+    margin-top: 1rem;
+    min-width: 12rem; 
+    border: $xl-px solid $blue;
+
+    &:hover {
+      border: $xl-px solid $navy;
+    }
+
+    &.highlight {
+      border: $xl-px solid $orange;
+    }
+
+    &.highlight:hover {
+      border: $xl-px solid $navy;
+    }
+
+    &:active {
+      border: $xl-px solid $navy;
+    }
   }
+}
 
-  &.highlight:hover {
-    cursor: pointer;
-    //font-size: $base-font-size * 1.1;
-    background: $navy;
-    border: 3px solid $navy;
-    color: $yellow;
-  }
+@media only screen and (max-width: 1440px) {
+  button {
+    padding: 1rem;
+    margin-top: 1rem;
+    min-width: 12rem;
+    border: $base-px solid $blue;
+    
+    &:hover {
+      border: $base-px solid $navy;
+    }
 
-  &:active {
-    background: $navy;
-    border: 3px solid $navy;
-    color: $yellow;
+    &.highlight {
+      border: $base-px solid $orange;
+    }
+
+    &.highlight:hover {
+      border: $base-px solid $navy;
+    }
+
+    &:active {
+      border: $base-px solid $navy;
+    }
   }
 }

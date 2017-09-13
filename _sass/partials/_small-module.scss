@@ -15,169 +15,96 @@ $module-padding-top: ($icon-size / 2) - 1;
 $module-text-padding-top: ($icon-size + 1);
 
 
-#services { 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: -webkit-inline-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+@media only screen and (max-width: 2560px) {
+  #services { 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: -webkit-inline-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-  li {
-    width: $module-width;
-    min-width: $module-min-width;
-    height: $module-height;
-    padding: $module-padding;
-    margin: $module-margin;
-    background: $grey;
-    margin-top: $module-margin-top; 
-    padding-top: $module-padding-top; 
-    z-index: 1;
-  }
+    li {
+      width: $module-width;
+      min-width: $module-min-width * $xxl-multiplier;
+      height: $module-height * $xxl-multiplier;
+      padding: $module-padding * $xxl-multiplier;
+      margin: $module-margin * $xxl-multiplier;
+      background: $grey;
+      margin-top: $module-margin-top * $xxl-multiplier; 
+      padding-top: $module-padding-top * $xxl-multiplier; 
+      z-index: 1;
+    }
 
-  h3 {
-    padding-top: $module-text-padding-top; 
-  }
+    h3 {
+      padding-top: $module-text-padding-top * $xxl-multiplier; 
+    }
 
-  .icon {
-    margin: 0 auto;
-    position: relative;
-    margin-top: -$icon-size;
-    width: $icon-size;
-    height: $icon-size;
-    background: #000076;
-    border-radius: 50%;
-    z-index: 3;
-  }
-}
-
-/* TO DO
-- figure out iPad portrait (why crooked)
-- fit icons into square dimensions
-*/
-
-/*$module-height: 13rem;
-$module-width: 100%;
-$module-padding: 1rem;
-//$module-image-dim: 12rem;
-$module-image-dim: 12rem;
-$module-image-min-dim: 11rem;
-$module-margin-top: -($module-image-dim / 2);
-$module-line-height: 0.25rem;
-
-.small-module {
-  list-style-type: none;
-  width: 88%;
-  margin: 0 auto;
-  padding: 0;
-
-  .module-text {
-    margin: 0 auto;
-    margin-top: $module-margin-top;
-    margin-bottom: 2rem;
-    //padding: $module-padding;
-    padding-top: abs( $module-margin-top ) + 1;
-    height: $module-height;
-    background: $grey;
-    width: 100%;
-    //max-width: 16rem;
-    //min-width: 12rem;
-    z-index: 1;
-  }
-
-  /*.module-line {
-    margin: 0 auto;
-    margin-top: $module-line-height;
-    margin-bottom: 1rem;
-    height: $module-line-height;
-    background: $blue;
-    width: 90%;
-    max-width: 17rem;
-    min-width: 12rem;
-  }*/
-
-  /*.module-image {
-    margin: 0 auto;
-    position: relative;
-    width: $module-image-dim;
-    height: $module-image-dim;
-    //min-width: $module-image-min-dim;
-    //min-height: $module-image-min-dim;
-    background: $navy;
-    z-index: 3;
-    border-radius: 50%;
+    .icon {
+      margin: 0 auto;
+      position: relative;
+      margin-top: -$icon-size * $xxl-multiplier;
+      width: $icon-size * $xxl-multiplier;
+      height: $icon-size * $xxl-multiplier;
+      background: #000076;
+      border-radius: 50%;
+      z-index: 3;
+    }
   }
 }
 
-$module-image-dim-tablet-portrait: 10rem;
-$module-image-dim-tablet-landscape: 11rem;
-$module-image-dim-mobile-portrait: 10rem;
+@media only screen and (max-width: 1920px) {  
+  #services { 
+    li {
+      min-width: $module-min-width * $xl-multiplier;
+      height: $module-height * $xl-multiplier;
+      padding: $module-padding * $xl-multiplier;
+      margin: $module-margin * $xl-multiplier;
+      margin-top: $module-margin-top * $xl-multiplier; 
+      padding-top: $module-padding-top * $xl-multiplier;
+    }
 
+    h3 {
+      padding-top: $module-text-padding-top * $xl-multiplier; 
+    }
 
-@media only screen and (max-width: 1024px){
-  .small-module {
-    width: 100%;
-  
-    .module-text {
-      margin-top: -($module-image-dim-tablet-landscape / 2);
-      padding-top: ($module-image-dim-tablet-landscape / 2) + 1;
+    .icon {
+      margin-top: -$icon-size * $xl-multiplier;
+      width: $icon-size * $xl-multiplier;
+      height: $icon-size * $xl-multiplier;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1440px) {
+  #services { 
+    li {
+      width: $module-width;
+      min-width: $module-min-width;
       height: $module-height;
-      background: $grey;
-      width: 100%;
-      max-width: 16rem;
-      min-width: 12rem;
-      z-index: 1;
+      padding: $module-padding;
+      margin: $module-margin;
+      margin-top: $module-margin-top; 
+      padding-top: $module-padding-top;
     }
 
-    .module-image {
-      width: $module-image-dim-tablet-landscape;
-      height: $module-image-dim-tablet-landscape;
+    h3 {
+      padding-top: $module-text-padding-top; 
+    }
+
+    .icon {
+      margin-top: -$icon-size;
+      width: $icon-size;
+      height: $icon-size;
     }
   }
 }
-
-@media only screen and (max-width: 768px){
-  .small-module {
-    width: 100%;
-  
-    .module-text {
-      margin-top: -($module-image-dim-tablet-portrait / 2);
-      padding-top: ($module-image-dim-tablet-portrait / 2) + 1;
-      background: $grey;
-      width: 100%;
-      z-index: 1;
-    }
-
-    .module-image {
-      width: $module-image-dim-tablet-portrait;
-      height: $module-image-dim-tablet-portrait;
-    }
-  }
-}
-
-@media only screen and (max-width: 667px){
-  .small-module {
-    width: 100%;
-  
-    .module-text {
-      margin-top: -($module-image-dim-mobile-portrait / 2);
-      padding-top: ($module-image-dim-mobile-portrait / 2) + 1;
-      background: $grey;
-      width: 100%;
-      z-index: 1;
-    }
-
-    .module-image {
-      width: $module-image-dim-mobile-portrait;
-      height: $module-image-dim-mobile-portrait;
-    }
-  }
-}*/
 

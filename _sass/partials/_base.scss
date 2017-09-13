@@ -10,15 +10,14 @@ $yellow: #ffd773;
 $body-font-family: "Rubik", sans-serif;
 $header-font-family: "Zilla Slab", serif;
 
+$xxl-multiplier: 2;
+$xl-multiplier: 1.5;
+$l-multiplier: 1;
+
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.content {
-  margin: 0 auto;
-  width: 85%;
 }

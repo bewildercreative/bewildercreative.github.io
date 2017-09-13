@@ -19,45 +19,83 @@
 @import "partials/side-module";
 
 $section-margin-bottom: 5rem;
+$base-logo-size: 22rem;
+$base-hero-section-min-size: 45rem;
+$base-hero-section-max-size: 50rem;
 
-body {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  background: $off-white;
-  overflow-x: hidden;
-}
+@media only screen and (max-width: 2560px) {
+  body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: $off-white;
+    overflow-x: hidden;
+  }
 
-section {
-  width: 100%;
-  margin-bottom: $section-margin-bottom;
-  //background: black;
-}
+  section {
+    width: 100%;
+    margin-bottom: $section-margin-bottom * $xxl-multiplier;
+  }
 
-.content {
-  margin: 0 auto;
-  width: 85%;
-}
+  .content {
+    margin: 0 auto;
+    width: 85%;
+  }
 
-header#hero {
-  width: 100%;
-}
+  header#hero {
+    width: 100%;
+  }
 
-#hero {
-  margin: 0 auto;
-  padding: 0;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
+  #hero {
+    margin: 0 auto;
+    padding: 0;
+    height: 80vh;
+    min-height: $base-hero-section-min-size * $xxl-multiplier;
+    max-height: $base-hero-section-max-size * $xxl-multiplier;
+    display: flex;
+    align-items: center;
 
-  img {
-    max-width: 22rem;
+    img {
+      max-width: $base-logo-size * $xxl-multiplier;
+    }
+  }
+
+  ::selection {
+      background-color: $yellow;
+      color: $navy;
   }
 }
 
-::selection {
-    background-color: $yellow;
-    color: $navy;
+@media only screen and (max-width: 1920px) {
+  section {
+    margin-bottom: $section-margin-bottom * $xl-multiplier;
+  }
+
+  #hero {
+    height: 85vh;
+    min-height: $base-hero-section-min-size * $xl-multiplier;
+    max-height: $base-hero-section-max-size * $xl-multiplier;
+
+    img {
+      max-width: $base-logo-size * $xl-multiplier;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  section {
+    margin-bottom: $section-margin-bottom;
+  }
+
+  #hero {
+    height: 90vh;
+    min-height: $base-hero-section-min-size;
+    max-height: $base-hero-section-max-size;
+
+    img {
+      max-width: $base-logo-size;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) { 

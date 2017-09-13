@@ -1,100 +1,209 @@
 @import "base";
 
-$icon-size: 12rem;
-$module-height: 15rem;
-$module-width: 20%;
-$module-min-width: 13rem;
-$module-padding: 1rem;
-$module-margin: 0.75rem;
-$module-margin-top: ($icon-size / 2);
-$module-padding-top: ($icon-size / 2) - 1;
-$module-text-padding-top: ($icon-size + 1);
+$base-icon-size: 14rem;
+$base-icon-offset: 45rem;
+$base-button-offset: 25rem;
+$base-icon-bg-size: 10.5rem; // 11 for JT
+$base-text-padding: 8rem;
+$base-li-padding: 3rem;
 
-#team { 
-  .content {
-    width: 100%;
-  }
+$module-text-base-width: 50rem;
+$module-text-base-height: 14rem;
 
-  ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    //background: blue;
-  }
-
-  .icon-container {
-    height: 14rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .icon {
-    position: absolute;
-    right: 45rem;
-    //margin-left: 32%;
-    width: 14rem;
-    height: 14rem;
-    background: $navy;
-    border-radius: 50%;
-
-    background-size: 10.5rem;
-    background-repeat: no-repeat;
-    background-position: 50% 2.5rem;
-  }
-
-  #Janny-icon {
-    background-size: 11rem;
-    background-position: 75% 2.25rem;
-  }
-
-  button {
-    position: absolute;
-    margin-top: 7rem;
-    right: 25rem;
-  }
-
-  li {
-    margin: 0 auto;
-    padding: 0;
-    padding-bottom: 3rem;
-    width: 100%;
-    //background: white;
-
-
-    .module-text {
-      margin-left: auto;
-      display: -webkit-flex;
-      display: flex;
-      align-items: center;
-      width: 50rem;
-      height: 14rem;
-      background: $grey;
-      text-align: left;
+@media only screen and (max-width: 2560px) {
+  #team { 
+    .content {
+      width: 100%;
     }
 
-    p {
-      width: 50%;
-      padding-left: 8rem;
-    }
-  }
-
-  li:nth-child(even) {
-    .module-text {
-      margin: 0;
-      text-align: right;
+    ul {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0;
     }
 
-    p {
-      margin-left: auto;
-      padding-right: 8rem;
+    .icon-container {
+      height: $base-icon-size * $xxl-multiplier;
+      padding-bottom: 1.5rem;
     }
 
     .icon {
-      left: 45rem;
-      //margin-left: 52%;
+      position: absolute;
+      right: $base-icon-offset * $xxl-multiplier;
+      width: $base-icon-size * $xxl-multiplier;
+      height: $base-icon-size * $xxl-multiplier;
+      background: $navy;
+      border-radius: 50%;
+
+      background-size: $base-icon-bg-size * $xxl-multiplier;
+      background-repeat: no-repeat;
+      background-position: 50% ( 2.5rem  * $xxl-multiplier );
+    }
+
+    #Janny-icon {
+      background-size: 11rem  * $xxl-multiplier;
+      background-position: 75% ( 2.25rem  * $xxl-multiplier );
     }
 
     button {
-      left: 25rem;
+      position: absolute;
+      margin-top: ( ($base-icon-size  * $xxl-multiplier) / 2);
+      right: $base-button-offset  * $xxl-multiplier;
+    }
+
+    li {
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: $base-li-padding * $xxl-multiplier;
+      width: 100%;
+
+
+      .module-text {
+        margin-left: auto;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        width: $module-text-base-width  * $xxl-multiplier;
+        height: $base-icon-size  * $xxl-multiplier;
+        background: $grey;
+        text-align: left;
+      }
+
+      p {
+        width: 50%;
+        padding-left: $base-text-padding  * $xxl-multiplier;
+      }
+    }
+
+    li:nth-child(even) {
+      .module-text {
+        margin: 0;
+        text-align: right;
+      }
+
+      p {
+        margin-left: auto;
+        padding-right: $base-text-padding  * $xxl-multiplier;
+      }
+
+      .icon {
+        left: $base-icon-offset  * $xxl-multiplier;
+      }
+
+      button {
+        left: $base-button-offset  * $xxl-multiplier;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  #team { 
+    .icon-container {
+      height: $base-icon-size * $xl-multiplier;
+    }
+
+    .icon {
+      right: $base-icon-offset  * $xl-multiplier;
+      width: $base-icon-size  * $xl-multiplier;
+      height: $base-icon-size  * $xl-multiplier;
+
+      background-size: $base-icon-bg-size  * $xl-multiplier;
+      background-position: 50% ( 2.5rem  * $xl-multiplier );
+    }
+
+    #Janny-icon {
+      background-size: ( $base-icon-bg-size + 1rem ) * $xl-multiplier;
+      background-position: 75% ( 2.25rem  * $xl-multiplier );
+    }
+
+    button {
+      margin-top: ( ( $base-icon-size  * $xl-multiplier ) / 2);
+      right: $base-button-offset  * $xl-multiplier;
+    }
+
+    li {
+      padding-bottom: $base-li-padding  * $xl-multiplier;
+
+      .module-text {
+        width: $module-text-base-width  * $xl-multiplier;
+        height: $base-icon-size  * $xl-multiplier;
+      }
+
+      p {
+        width: 50%;
+        padding-left: $base-text-padding  * $xl-multiplier;
+      }
+    }
+
+    li:nth-child(even) {
+      p {
+        padding-right: $base-text-padding  * $xl-multiplier;
+      }
+
+      .icon {
+        left: $base-icon-offset  * $xl-multiplier;
+      }
+
+      button {
+        left: $base-button-offset  * $xl-multiplier;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  #team { 
+    .icon-container {
+      height: $base-icon-size;
+      padding-bottom: 1.5rem;
+    }
+
+    .icon {
+      right: $base-icon-offset;
+      width: $base-icon-size;
+      height: $base-icon-size;
+
+      background-size: $base-icon-bg-size;
+      background-position: 50% 2.5rem;
+    }
+
+    #Janny-icon {
+      background-size: $base-icon-bg-size + 1rem;
+      background-position: 75% 2.25rem;
+    }
+
+    button {
+      margin-top: ( $base-icon-size / 2);
+      right: $base-button-offset;
+    }
+
+    li {
+      padding-bottom: $base-li-padding;
+
+      .module-text {
+        width: $module-text-base-width;
+        height: $base-icon-size;
+      }
+
+      p {
+        width: 50%;
+        padding-left: $base-text-padding;
+      }
+    }
+
+    li:nth-child(even) {
+      p {
+        padding-right: $base-text-padding;
+      }
+
+      .icon {
+        left: $base-icon-offset;
+      }
+
+      button {
+        left: $base-button-offset;
+      }
     }
   }
 }
@@ -288,178 +397,3 @@ $module-text-padding-top: ($icon-size + 1);
     }
   }
 }
-
-/*#team { 
-  ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  li {
-    margin: 0 auto;
-    width: 100%;
-    height: 13rem;
-    margin-bottom: 1rem;
-  }
-
-  .module-text {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    background: $grey;
-    width: 70%;
-    height: 11rem;
-    margin-bottom: 1rem;
-
-    p {
-      width: 45%;
-      min-width: 12rem;
-      text-align: left;
-      padding-left: 20%;
-    }
-  }
-
-  .icon {
-    width: $icon-size;
-    height: $icon-size;
-    background: $navy;
-    border-radius: 50%;
-    margin-left: -75%;
-  }
-}*/
-
-/*#team {
-  //background: blue;
-
-  ul{
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none;
-    width: 75%;
-    //background: black;
-  }
-
-  li {
-
-    .module-text {
-      padding: 0;
-      width: 75%;
-      min-width: 35rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      margin-top: 1rem;
-      background: $grey;
-      z-index: 1;
-    }
-
-    .icon { 
-      margin: 0 auto; 
-      position: relative;
-      width: $icon-size;
-      height: $icon-size;
-      background: #000076;
-      border-radius: 50%;
-      z-index: 3;
-    }
-  }
-
-  li:nth-child(even) {
-    .module-text {
-      margin-left: auto;
-    }
-
-    p {
-      margin-left: auto;
-    }
-  }
-}
-
-@media only screen and (max-width: 736px) { 
-  #team {
-    .content {
-      width: 100%;
-    }
-
-    ul {
-      width: 100%;
-    }
-
-    li {
-
-      .module-text {
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        min-width: 100%;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-      }
-
-      p {
-        margin: 0 auto;
-        width: 83%;
-        text-align: center;
-      }
-    }
-  }
-}*/
-
-/* TO-DO
- - figure out why blue line margin-top is inconsistent with small-module's
- - how to make nth-child(even) work
- - mobile breakpoints
- - fix icon position
-*/ 
-
-/*$module-image-dim: 14vw;
-$module-image-min-dim: 11rem;
-$module-line-height: 0.5rem;
-
-.side-module {
-  list-style-type: none;
-  padding: 0;
-
-  .module-text {
-    margin: 0 auto;
-    padding: 0;
-    background: $grey;
-    min-height: 15rem;
-    width: 50%;
-    min-width: 22rem;
-    margin-bottom: 3rem;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-
-    p {
-      //line-height: 15rem;
-    }
-  }
-
-  /*li.module-text:nth-child(even) {
-    padding: 0;
-    padding-right: 15rem;
-  }*/
-
-  /*.module-line {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    margin-top: $module-line-height;
-    height: $module-line-height;
-    background: $blue;
-    width: 100%;
-  }*/
-
-  /*.module-image {
-    position: absolute;
-    margin-top: .5rem;
-    margin-left: 15rem;
-    width: $module-image-dim;
-    width: $module-image-min-dim;
-    height: $module-image-dim;
-    height: $module-image-min-dim;
-    background: $navy;
-    z-index: 3;
-    border-radius: 50%;
-  }
-}*/
