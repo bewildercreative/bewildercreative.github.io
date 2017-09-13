@@ -1,12 +1,14 @@
 @import "base";
 
+$sm-multiplier: 0.85;
+
 $base-icon-size: 14rem;
 $base-icon-offset: 45rem;
 $base-button-offset: 25rem;
 $base-icon-bg-size: 10.5rem; // 11 for JT
 $base-text-padding: 8rem;
 $base-li-padding: 3rem;
-$base-button-width: 12rem;
+$base-button-width: 11rem;
 
 $module-text-base-width: 50rem;
 $module-text-base-height: 14rem;
@@ -330,6 +332,62 @@ $module-text-base-height: 14rem;
       p {
         padding-left: 0;
         padding-right: 8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #team { 
+    .icon-container {
+      height: $base-icon-size * $sm-multiplier;
+      padding-bottom: 1.5rem;
+    }
+
+    .icon {
+      right: $base-icon-offset * $sm-multiplier;
+      width: $base-icon-size * $sm-multiplier;
+      height: $base-icon-size * $sm-multiplier;
+
+      background-size: $base-icon-bg-size * $sm-multiplier;
+      background-position: 50% ( 2.5rem  * $sm-multiplier );
+    }
+
+    #Janny-icon {
+      background-size: ( $base-icon-bg-size + 1rem ) * $sm-multiplier;
+      background-position: 75% ( 2.25rem * $sm-multiplier );
+    }
+
+    button {
+      width: $base-button-width * $sm-multiplier;
+      right: ( $module-text-base-width / 4 ) * $sm-multiplier;
+      margin-top: -( ( $base-icon-size * $sm-multiplier ) / 8);
+    }
+
+    li {
+      padding-bottom: $base-li-padding;
+
+      .module-text {
+        width: $module-text-base-width * $sm-multiplier;
+        height: $base-icon-size * $sm-multiplier;
+      }
+
+      p {
+        padding-left: $base-text-padding * $sm-multiplier;
+      }
+    }
+
+    li:nth-child(even) {
+      p {
+        padding-right: $base-text-padding * $sm-multiplier;
+      }
+
+      .icon {
+        left: $base-icon-offset * $sm-multiplier;
+      }
+
+      button {
+        left: ( $module-text-base-width / 4 ) * $sm-multiplier;
       }
     }
   }

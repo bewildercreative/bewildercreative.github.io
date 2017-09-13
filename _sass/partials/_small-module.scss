@@ -108,3 +108,26 @@ $module-text-padding-top: ($icon-size + 1);
   }
 }
 
+@media only screen and (max-width: 375px) {
+  #services { 
+    li {
+      min-width: $module-min-width * $sm-multiplier;
+      height: $module-height * $sm-multiplier;
+      padding: $module-padding * $sm-multiplier;
+      margin: $module-margin * $sm-multiplier;
+      margin-top: $module-margin-top * $sm-multiplier; 
+      padding-top: $module-padding-top * $sm-multiplier;
+    }
+
+    h3 {
+      padding-top: $module-text-padding-top * $sm-multiplier; 
+    }
+
+    .icon {
+      margin-top: -$icon-size * $sm-multiplier;
+      width: $icon-size * $sm-multiplier;
+      height: $icon-size * $sm-multiplier;
+    }
+  }
+}
+

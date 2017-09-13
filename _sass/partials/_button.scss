@@ -5,6 +5,8 @@ $base-px: 3px;
 $xl-px: 4px;
 $xxl-px: 5px;
 
+$sm-px: 2px;
+
 //@media only screen and (max-width: 2560px) {
   button {
     @include transition(background .25s, border .25s);
@@ -90,6 +92,30 @@ $xxl-px: 5px;
 
     &:active {
       border: $base-px solid $navy;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  button {
+    padding: 0.75rem;
+    min-width: 10rem;
+    border: $sm-px solid $blue;
+
+    &:hover {
+      border: $sm-px solid $navy;
+    }
+
+    &.highlight {
+      border: $sm-px solid $orange;
+    }
+
+    &.highlight:hover {
+      border: $sm-px solid $navy;
+    }
+
+    &:active {
+      border: $sm-px solid $navy;
     }
   }
 }

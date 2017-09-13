@@ -135,49 +135,15 @@ footer {
 
   .half-page {
     width: 48%;
-    min-width: $half-page-min-width;
-    //background: white;
+    min-width: $half-page-min-width * 1.5;
     margin: $half-page-margin;
   } 
 }
 
-/* TO DO
-- copyright div expands when keyboard is being used
-- mobile section sizes
-*/
-
-
-/*.contact {
-  height: 70vh;
-  background: $grey;
-  //overflow: hidden;
-  .section-text {
-  }
-  button {
-    margin: 0.5rem;
-  }
-  img {
-    width: 45vw;
-    min-width: 40rem;
-    padding-top: -2rem;
-  }
+@media only screen and (max-width: 375px) {
+  .half-page {
+    width: 48%;
+    min-width: $half-page-min-width;
+    margin: $half-page-margin;
+  } 
 }
-.copyright {
-  margin: 0 auto;
-  color: $navy;
-  width:100%;
-  text-align: center;
-  background: $off-white;
-  position: absolute;
-  bottom: 0;
-  p {
-    display: inline-block;
-  }
-  ul {
-    list-style: none;
-    display: inline-block;
-    li {
-      display: inline-block;
-    }
-  }
-}*/

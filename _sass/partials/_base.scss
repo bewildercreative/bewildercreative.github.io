@@ -14,6 +14,8 @@ $xxl-multiplier: 2;
 $xl-multiplier: 1.5;
 $l-multiplier: 1;
 
+$sm-multiplier: 0.85;
+
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;

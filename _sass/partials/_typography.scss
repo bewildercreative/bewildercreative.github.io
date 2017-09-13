@@ -175,7 +175,7 @@ $base-header-size: 2.25rem;
 
 @media only screen and (max-width: 768px) { 
   header {
-    min-width: 24rem;
+    min-width: 27rem;
   
     p {
       min-width: 23rem;
@@ -184,7 +184,7 @@ $base-header-size: 2.25rem;
 
   .contact {
     header {
-      min-width: 18rem;
+      min-width: 20rem;
     }
   
     p {
@@ -200,6 +200,24 @@ $base-header-size: 2.25rem;
     p {
       min-width: 17rem;
     }
+  }
+}
+
+@media only screen and (max-width: 375px) { 
+  body {
+    font-size: $base-font-size * $sm-multiplier;
+  }
+
+  h1 {
+    font-size: $base-header-size * $sm-multiplier;
+  }
+
+  p {
+    line-height: $base-line-height * $sm-multiplier;
+  }
+
+  button {
+    font-size: $base-font-size * $sm-multiplier;
   }
 }
 

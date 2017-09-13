@@ -16,6 +16,10 @@ $base-hero-section-min-size: 45rem;
 $base-hero-section-max-size: 50rem;
 
 //@media only screen and (max-width: 2560px) {
+  html {
+    overflow-x: hidden;
+  }
+  
   body {
     margin: 0 auto;
     padding: 0;
@@ -103,6 +107,15 @@ $base-hero-section-max-size: 50rem;
     min-height: 35rem;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  #hero {
+    img {
+      max-width: $base-logo-size * $sm-multiplier;
+    }
+  }
+}
+
 
 
 /*body {
