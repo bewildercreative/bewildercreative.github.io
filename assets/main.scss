@@ -2,14 +2,6 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-/* TO DO
-- why is paragraph text not centered (DONE for now)
-- hero mobile sizes
-*/
-
-//@import "minima";
-//@import 'jeet/scss/index';
-//@import 'simple-grid';
 @import "partials/base";
 @import "partials/transitions";
 @import "partials/button";
@@ -23,7 +15,7 @@ $base-logo-size: 22rem;
 $base-hero-section-min-size: 45rem;
 $base-hero-section-max-size: 50rem;
 
-@media only screen and (max-width: 2560px) {
+//@media only screen and (max-width: 2560px) {
   body {
     margin: 0 auto;
     padding: 0;
@@ -64,7 +56,7 @@ $base-hero-section-max-size: 50rem;
       background-color: $yellow;
       color: $navy;
   }
-}
+//}
 
 @media only screen and (max-width: 1920px) {
   section {

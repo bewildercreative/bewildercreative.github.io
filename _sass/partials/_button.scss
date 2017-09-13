@@ -5,7 +5,7 @@ $base-px: 3px;
 $xl-px: 4px;
 $xxl-px: 5px;
 
-@media only screen and (max-width: 2560px) {
+//@media only screen and (max-width: 2560px) {
   button {
     @include transition(background .25s, border .25s);
     color: $blue;
@@ -42,7 +42,7 @@ $xxl-px: 5px;
       color: $yellow;
     }
   }
-}
+//}
 
 @media only screen and (max-width: 1920px) {
   button {
@@ -75,7 +75,7 @@ $xxl-px: 5px;
     margin-top: 1rem;
     min-width: 12rem;
     border: $base-px solid $blue;
-    
+
     &:hover {
       border: $base-px solid $navy;
     }

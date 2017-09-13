@@ -43,7 +43,7 @@ section.contact {
   }
 
   img {
-    max-width: $base-img-size;
+    max-width: $base-img-size * $xxl-multiplier;
   }
 }
 
@@ -54,17 +54,9 @@ section.contact {
 }
 
 footer {
-  max-height: 10rem;
-}
-
-@media only screen and (max-width: 2560px) {
-  .contact {
-    .content {
-      img {
-        max-width: $base-img-size * $xxl-multiplier;
-      }
-    }
-  }
+ height: 3rem;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -140,21 +132,17 @@ footer {
   height: 70vh;
   background: $grey;
   //overflow: hidden;
-
   .section-text {
   }
-
   button {
     margin: 0.5rem;
   }
-
   img {
     width: 45vw;
     min-width: 40rem;
     padding-top: -2rem;
   }
 }
-
 .copyright {
   margin: 0 auto;
   color: $navy;
@@ -163,15 +151,12 @@ footer {
   background: $off-white;
   position: absolute;
   bottom: 0;
-
   p {
     display: inline-block;
   }
-
   ul {
     list-style: none;
     display: inline-block;
-
     li {
       display: inline-block;
     }

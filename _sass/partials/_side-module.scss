@@ -6,11 +6,12 @@ $base-button-offset: 25rem;
 $base-icon-bg-size: 10.5rem; // 11 for JT
 $base-text-padding: 8rem;
 $base-li-padding: 3rem;
+$base-button-width: 12rem;
 
 $module-text-base-width: 50rem;
 $module-text-base-height: 14rem;
 
-@media only screen and (max-width: 2560px) {
+//@media only screen and (max-width: 2560px) {
   #team { 
     .content {
       width: 100%;
@@ -32,7 +33,7 @@ $module-text-base-height: 14rem;
       right: $base-icon-offset * $xxl-multiplier;
       width: $base-icon-size * $xxl-multiplier;
       height: $base-icon-size * $xxl-multiplier;
-      background: $navy;
+      background: $yellow;
       border-radius: 50%;
 
       background-size: $base-icon-bg-size * $xxl-multiplier;
@@ -47,7 +48,8 @@ $module-text-base-height: 14rem;
 
     button {
       position: absolute;
-      margin-top: ( ($base-icon-size  * $xxl-multiplier) / 2);
+      width: $base-button-width * $xxl-multiplier;
+      margin-top: -( ($base-icon-size  * $xxl-multiplier) / 8);
       right: $base-button-offset  * $xxl-multiplier;
     }
 
@@ -95,7 +97,7 @@ $module-text-base-height: 14rem;
       }
     }
   }
-}
+//}
 
 @media only screen and (max-width: 1920px) {
   #team { 
@@ -118,7 +120,8 @@ $module-text-base-height: 14rem;
     }
 
     button {
-      margin-top: ( ( $base-icon-size  * $xl-multiplier ) / 2);
+      width: $base-button-width * $xl-multiplier;
+      margin-top: -( ( $base-icon-size  * $xl-multiplier ) / 8);
       right: $base-button-offset  * $xl-multiplier;
     }
 
@@ -174,8 +177,10 @@ $module-text-base-height: 14rem;
     }
 
     button {
-      margin-top: ( $base-icon-size / 2);
+      width: $base-button-width;
       right: $base-button-offset;
+      margin-top: -( ( $base-icon-size ) / 8);
+      z-index: 3;
     }
 
     li {

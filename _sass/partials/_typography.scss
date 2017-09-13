@@ -9,7 +9,7 @@ $base-font-size: 0.95rem;
 $base-line-height: 1.5rem;
 $base-header-size: 2.25rem;
 
-@media only screen and (max-width: 2560px) { 
+//@media only screen and (max-width: 2560px) { 
   body {
     font-family: $body-font-family;
     color: $navy;
@@ -48,7 +48,7 @@ $base-header-size: 2.25rem;
   button {
     font-size: $base-font-size * $xxl-multiplier;
   }
-}
+//}
 
 @media only screen and (max-width: 1920px) { 
   body {
