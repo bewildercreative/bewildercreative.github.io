@@ -4,8 +4,9 @@ $button-margin: 0.25rem;
 $half-page-width: 45%;
 $half-page-min-width: 20rem;
 $half-page-margin: 0.75rem;
-
 $base-img-size: 20rem;
+
+$base-copyright-height: 4rem;
 
 section.contact {
   margin-bottom: 0rem;
@@ -15,7 +16,8 @@ section.contact {
   background: $grey;
 
   .content {
-    min-height: 60vh;
+    min-height: 50vh;
+
     display: -webkit-inline-flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -54,35 +56,52 @@ section.contact {
 }
 
 footer {
- height: 3rem;
- padding-top: 1rem;
- padding-bottom: 1rem;
+  height: $base-copyright-height * $xxl-multiplier;
+  display: -webkit-inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 @media only screen and (max-width: 1920px) {
   .contact {
     .content {
+
       img {
         max-width: $base-img-size * $xl-multiplier;
       }
     }
+  }
+
+  footer {
+    height: $base-copyright-height * $xl-multiplier;
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .contact {
     .content {
+      min-height: 60vh;
+      max-height: none;
+
       img {
         max-width: $base-img-size;
       }
     }
+  }
+
+  footer {
+    height: $base-copyright-height;
   }
 }
 
 @media only screen and (max-width: 1366px) and (orientation: landscape){ 
   .contact {
     .content {
-      min-height: 50vh;
+      min-height: 40vh;
     }
 
     header {
