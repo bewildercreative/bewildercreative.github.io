@@ -17,6 +17,7 @@ $module-text-padding-top: ($icon-size + 1);
 
 //@media only screen and (max-width: 2560px) {
   #services { 
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -29,6 +30,7 @@ $module-text-padding-top: ($icon-size + 1);
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
       justify-content: center;
+      //background: black;
     }
 
     li {
@@ -96,9 +98,7 @@ $module-text-padding-top: ($icon-size + 1);
     .blue-line {
       bottom: ( $xl-px * 3 ) + 2;
       height: $xl-px;
-      background: $blue;
       width: ( $module-min-width * $xl-multiplier ) + ( $module-min-width / 4 );
-      padding: 0;
     }
 
     h3 {
@@ -128,13 +128,9 @@ $module-text-padding-top: ($icon-size + 1);
     }
 
     .blue-line {
-      margin: 0 auto;
-      position: relative;
       bottom: $base-px * 3;
       height: $base-px;
-      background: $blue;
       width: $module-min-width + 2rem;
-      padding: 0;
     }
 
     h3 {
@@ -162,13 +158,9 @@ $module-text-padding-top: ($icon-size + 1);
     }
 
     .blue-line {
-      margin: 0 auto;
-      position: relative;
       bottom: ( $sm-px * 4 );
       height: $sm-px;
-      background: $blue;
       width: ( $module-min-width * $sm-multiplier ) + 1.75rem;
-      padding: 0;
     }
 
     h3 {
