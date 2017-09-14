@@ -15,6 +15,13 @@ $xl-multiplier: 1.5;
 $l-multiplier: 1;
 
 $sm-multiplier: 0.85;
+$xs-multiplier: 0.5;
+
+$base-px: 3px;
+$xl-px: 4px;
+$xxl-px: 5px;
+
+$sm-px: 2px;
 
 @mixin vertical-align($position: relative) {
   position: $position;

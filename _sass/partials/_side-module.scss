@@ -1,7 +1,5 @@
 @import "base";
 
-$sm-multiplier: 0.85;
-
 $base-icon-size: 14rem;
 $base-icon-offset: 45rem;
 $base-button-offset: 25rem;
@@ -73,6 +71,23 @@ $module-text-base-height: 14rem;
         text-align: left;
       }
 
+      /*.module-text:after {
+        content:"";
+        display:block;
+        position:absolute;
+        z-index:-1;
+        top: 2px;
+        border-bottom: 3px solid black;
+      }*/
+
+      .blue-line {
+        margin-left: auto;
+        height: $xxl-px;
+        background: $blue;
+        width: $module-text-base-width * $xxl-multiplier;
+        margin-top: $xxl-px;
+      }
+
       p {
         width: 50%;
         padding-left: $base-text-padding  * $xxl-multiplier;
@@ -96,6 +111,10 @@ $module-text-base-height: 14rem;
 
       button {
         left: $base-button-offset  * $xxl-multiplier;
+      }
+
+      .blue-line {
+        margin-left: 0;
       }
     }
   }
@@ -135,6 +154,12 @@ $module-text-base-height: 14rem;
         height: $base-icon-size  * $xl-multiplier;
       }
 
+      .blue-line {
+        height: $xl-px;
+        width: $module-text-base-width * $xl-multiplier;
+        margin-top: $xl-px;
+      }
+
       p {
         width: 50%;
         padding-left: $base-text-padding  * $xl-multiplier;
@@ -144,6 +169,10 @@ $module-text-base-height: 14rem;
     li:nth-child(even) {
       p {
         padding-right: $base-text-padding  * $xl-multiplier;
+      }
+
+      .blue-line {
+        margin-left: 0;
       }
 
       .icon {
@@ -193,6 +222,12 @@ $module-text-base-height: 14rem;
         height: $base-icon-size;
       }
 
+      .blue-line {
+        height: $base-px;
+        width: $module-text-base-width;
+        margin-top: $base-px;
+      }
+
       p {
         width: 50%;
         padding-left: $base-text-padding;
@@ -202,6 +237,10 @@ $module-text-base-height: 14rem;
     li:nth-child(even) {
       p {
         padding-right: $base-text-padding;
+      }
+
+      .blue-line {
+        margin-left: 0;
       }
 
       .icon {
@@ -227,6 +266,10 @@ $module-text-base-height: 14rem;
 
     li {
       .module-text {
+        width: 40rem;
+      }
+
+      .blue-line {
         width: 40rem;
       }
     }
@@ -257,6 +300,10 @@ $module-text-base-height: 14rem;
       .module-text {
         width: 30rem;
       }
+
+      .blue-line {
+        width: 30rem;
+      }
     }
 
     li:nth-child(even) {
@@ -283,6 +330,10 @@ $module-text-base-height: 14rem;
 
     li {
       .module-text {
+        width: 25rem;
+      }
+
+      .blue-line {
         width: 25rem;
       }
 
@@ -316,6 +367,10 @@ $module-text-base-height: 14rem;
 
     li {
       .module-text {
+        width: 20rem;
+      }      
+      
+      .blue-line {
         width: 20rem;
       }
 
@@ -372,6 +427,13 @@ $module-text-base-height: 14rem;
         height: $base-icon-size * $sm-multiplier;
       }
 
+      .blue-line {
+        height: $sm-px;
+        background: $blue;
+        width: $module-text-base-width * $sm-multiplier;
+        margin-top: $sm-px;
+      }
+
       p {
         padding-left: $base-text-padding * $sm-multiplier;
       }
@@ -380,6 +442,10 @@ $module-text-base-height: 14rem;
     li:nth-child(even) {
       p {
         padding-right: $base-text-padding * $sm-multiplier;
+      }
+
+      .blue-line {
+        margin-left: 0;
       }
 
       .icon {
@@ -393,45 +459,6 @@ $module-text-base-height: 14rem;
   }
 }
 
-/*@media only screen and (max-width: 411px) { 
-  #team {
-    .icon {
-      margin-top: -10rem;
-      //right: 10rem;
-      //top: -5rem;
-    }
-
-    button {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    li {
-      padding-top: 10rem;
-
-      .module-text {
-        width: 100%;
-      }
-
-      p {
-        width: 100%;
-        padding-left: -6rem;
-        //padding-left: 9rem;
-      }
-    }
-
-    li:nth-child(even) {
-      .icon {
-        //left: 10rem;
-      }
-
-      p {
-        //padding-right: 9rem;
-      }
-    }
-  }
-}*/
-
 @media only screen and (max-width: 411px) { 
   #team {
     .icon {
@@ -443,6 +470,10 @@ $module-text-base-height: 14rem;
         width: 18rem;
       }
 
+      .blue-line {
+        width: 18rem;
+      }
+
       p {
         padding-left: 9rem;
       }
@@ -451,6 +482,10 @@ $module-text-base-height: 14rem;
     li:nth-child(even) {
       .icon {
         left: 10rem;
+      }
+
+      .blue-line {
+        margin-left: 0;
       }
 
       p {

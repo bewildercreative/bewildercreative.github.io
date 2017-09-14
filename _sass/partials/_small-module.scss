@@ -5,13 +5,13 @@
 */
 
 $icon-size: 11rem;
-$module-height: 15rem;
+$module-height: 14rem;
 $module-width: 18%;
 $module-min-width: 12rem;
 $module-padding: 1rem;
 $module-margin: 0.75rem;
-$module-margin-top: ($icon-size / 2);
-$module-padding-top: ($icon-size / 2) - 1;
+$module-margin-top: -($icon-size / 2);
+$module-padding-top: ($icon-size / 2);
 $module-text-padding-top: ($icon-size + 1);
 
 
@@ -32,8 +32,14 @@ $module-text-padding-top: ($icon-size + 1);
     }
 
     li {
-      width: $module-width;
-      min-width: $module-min-width * $xxl-multiplier;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+
+    .module-text {
+      margin: 0 auto;
+      //width: $module-width;
+      width: $module-min-width * $xxl-multiplier;
       height: $module-height * $xxl-multiplier;
       padding: $module-padding * $xxl-multiplier;
       margin: $module-margin * $xxl-multiplier;
@@ -43,14 +49,30 @@ $module-text-padding-top: ($icon-size + 1);
       z-index: 1;
     }
 
+   .blue-line {
+      margin: 0 auto;
+      position: relative;
+      bottom: $xxl-px * 3 + 4;
+      height: $xxl-px;
+      background: $blue;
+      width: ( $module-min-width * $xxl-multiplier ) + ( $module-min-width / 3 );
+      padding: 0;
+    }
+
     h3 {
-      padding-top: $module-text-padding-top * $xxl-multiplier; 
+      //padding-top: $module-text-padding-top * $xxl-multiplier; 
+    }
+
+    .icon-container {
+      width: 100%;
+      //background: black;
     }
 
     .icon {
       margin: 0 auto;
       position: relative;
-      margin-top: -$icon-size * $xxl-multiplier;
+      top: -$icon-size * ( $xxl-multiplier / 32 );
+      //margin-top: -$icon-size * $xxl-multiplier;
       width: $icon-size * $xxl-multiplier;
       height: $icon-size * $xxl-multiplier;
       background: #000076;
@@ -62,8 +84,8 @@ $module-text-padding-top: ($icon-size + 1);
 
 @media only screen and (max-width: 1920px) {  
   #services { 
-    li {
-      min-width: $module-min-width * $xl-multiplier;
+    .module-text {
+      width: $module-min-width * $xl-multiplier;
       height: $module-height * $xl-multiplier;
       padding: $module-padding * $xl-multiplier;
       margin: $module-margin * $xl-multiplier;
@@ -71,12 +93,21 @@ $module-text-padding-top: ($icon-size + 1);
       padding-top: $module-padding-top * $xl-multiplier;
     }
 
+    .blue-line {
+      bottom: ( $xl-px * 3 ) + 2;
+      height: $xl-px;
+      background: $blue;
+      width: ( $module-min-width * $xl-multiplier ) + ( $module-min-width / 4 );
+      padding: 0;
+    }
+
     h3 {
-      padding-top: $module-text-padding-top * $xl-multiplier; 
+      //padding-top: $module-text-padding-top * $xl-multiplier; 
     }
 
     .icon {
-      margin-top: -$icon-size * $xl-multiplier;
+      top: -$icon-size * ( $xl-multiplier / 32 );
+      //margin-top: -$icon-size * $xl-multiplier;
       width: $icon-size * $xl-multiplier;
       height: $icon-size * $xl-multiplier;
     }
@@ -86,9 +117,9 @@ $module-text-padding-top: ($icon-size + 1);
 
 @media only screen and (max-width: 1440px) {
   #services { 
-    li {
-      width: $module-width;
-      min-width: $module-min-width;
+    .module-text {
+      //width: $module-width;
+      width: $module-min-width;
       height: $module-height;
       padding: $module-padding;
       margin: $module-margin;
@@ -96,12 +127,23 @@ $module-text-padding-top: ($icon-size + 1);
       padding-top: $module-padding-top;
     }
 
+    .blue-line {
+      margin: 0 auto;
+      position: relative;
+      bottom: $base-px * 3;
+      height: $base-px;
+      background: $blue;
+      width: $module-min-width + 2rem;
+      padding: 0;
+    }
+
     h3 {
-      padding-top: $module-text-padding-top; 
+      //padding-top: $module-text-padding-top; 
     }
 
     .icon {
-      margin-top: -$icon-size;
+      top: -$icon-size * ( 1 / 32 );
+      //margin-top: -$icon-size;
       width: $icon-size;
       height: $icon-size;
     }
@@ -110,8 +152,8 @@ $module-text-padding-top: ($icon-size + 1);
 
 @media only screen and (max-width: 375px) {
   #services { 
-    li {
-      min-width: $module-min-width * $sm-multiplier;
+    .module-text {
+      width: $module-min-width * $sm-multiplier;
       height: $module-height * $sm-multiplier;
       padding: $module-padding * $sm-multiplier;
       margin: $module-margin * $sm-multiplier;
@@ -120,14 +162,14 @@ $module-text-padding-top: ($icon-size + 1);
     }
 
     h3 {
-      padding-top: $module-text-padding-top * $sm-multiplier; 
+      //padding-top: $module-text-padding-top * $sm-multiplier; 
     }
 
     .icon {
-      margin-top: -$icon-size * $sm-multiplier;
+      top: -$icon-size * ( $sm-multiplier / 32 );
+      //margin-top: -$icon-size * $sm-multiplier;
       width: $icon-size * $sm-multiplier;
       height: $icon-size * $sm-multiplier;
     }
   }
 }
-

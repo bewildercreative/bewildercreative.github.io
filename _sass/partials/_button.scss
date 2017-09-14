@@ -1,12 +1,6 @@
 @import "base";
 @import "typography";
 
-$base-px: 3px;
-$xl-px: 4px;
-$xxl-px: 5px;
-
-$sm-px: 2px;
-
 //@media only screen and (max-width: 2560px) {
   button {
     @include transition(background .25s, border .25s);

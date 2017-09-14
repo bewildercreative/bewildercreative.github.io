@@ -15,10 +15,17 @@ layout: default
       <ul class="small-module">
         {% for small-module in site.services %}
           <li>
-            <div class="icon" style="background-image: url({{ small-module.image }})" />
+            <div class="icon-container">
+              <div class="icon" style="background-image: url({{ small-module.image }})" />
+            </div>
 
-            <h3>{{ small-module.title | escape }}</h3>
-            <p>{{ small-module.text | escape }}</p>
+
+            <div class="module-text">
+              <h3>{{ small-module.title | escape }}</h3>
+              <p>{{ small-module.text | escape }}</p>
+            </div>
+
+            <div class="blue-line" />
           </li>
         {% endfor %}
       </ul>
@@ -48,6 +55,8 @@ layout: default
                 {{ side-module.text | escape }}
               </p>
             </div>
+
+            <div class="blue-line" />
 
             <button>{{ side-module.title | escape }}'s Portfolio</button>
             
