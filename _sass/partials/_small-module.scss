@@ -161,6 +161,16 @@ $module-text-padding-top: ($icon-size + 1);
       padding-top: $module-padding-top * $sm-multiplier;
     }
 
+    .blue-line {
+      margin: 0 auto;
+      position: relative;
+      bottom: ( $sm-px * 4 );
+      height: $sm-px;
+      background: $blue;
+      width: ( $module-min-width * $sm-multiplier ) + 1.75rem;
+      padding: 0;
+    }
+
     h3 {
       //padding-top: $module-text-padding-top * $sm-multiplier; 
     }
