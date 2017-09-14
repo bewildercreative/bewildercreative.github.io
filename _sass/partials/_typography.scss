@@ -8,6 +8,8 @@
 $base-font-size: 0.95rem;
 $base-line-height: 1.5rem;
 $base-header-size: 2.25rem;
+$base-h2-size: 1.5rem;
+$base-h2-line-height: 2rem;
 
 //@media only screen and (max-width: 2560px) { 
   body {
@@ -17,12 +19,25 @@ $base-header-size: 2.25rem;
     font-size: $base-font-size * $xxl-multiplier;
   }
 
-  h1 {
+  h1, h2 {
     font-family: $header-font-family;
     font-weight: normal;
     font-style: italic;
+  }
+
+  h1 {
     font-size: $base-header-size * $xxl-multiplier;
     margin-bottom: -0.5rem;
+  }
+
+  h2 {
+    font-size: $base-h2-size * $xxl-multiplier;
+    line-height: $base-h2-line-height * $xxl-multiplier;
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    min-width: 15rem;
   }
 
   h3 {
@@ -60,6 +75,12 @@ $base-header-size: 2.25rem;
     margin-bottom: -0.5rem;
   }
 
+  h2 {
+    font-size: $base-h2-size * $xl-multiplier;
+    line-height: $base-h2-line-height * $xl-multiplier;
+  }
+
+
   p {
     line-height: $base-line-height * $xl-multiplier;
   }
@@ -90,6 +111,12 @@ $base-header-size: 2.25rem;
     font-size: $base-header-size;
     margin-bottom: -0.5rem;
   }
+
+  h2 {
+    font-size: $base-h2-size;
+    line-height: $base-h2-line-height;
+  }
+
 
   p {
     line-height: $base-line-height;
@@ -149,7 +176,7 @@ $base-header-size: 2.25rem;
   }
 
   button {
-    font-size: $base-font-size * $l-multiplier;
+    //font-size: $base-font-size * $l-multiplier;
   }
 }
 
@@ -210,6 +237,11 @@ $base-header-size: 2.25rem;
 
   h1 {
     font-size: $base-header-size * $sm-multiplier;
+  }
+
+  h2 {
+    font-size: $base-h2-size * $sm-multiplier;
+    line-height: $base-h2-line-height * $sm-multiplier;
   }
 
   p {

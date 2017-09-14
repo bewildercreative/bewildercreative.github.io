@@ -5,8 +5,9 @@ $half-page-width: 45%;
 $half-page-min-width: 20rem;
 $half-page-margin: 0.75rem;
 $base-img-size: 20rem;
+$base-min-height: 30rem;
 
-$base-copyright-height: 4rem;
+$base-copyright-height: 5rem;
 
 section.contact {
   margin-bottom: 0rem;
@@ -14,9 +15,11 @@ section.contact {
 
 .contact {
   background: $grey;
+  //background: linear-gradient( $off-white 40%, $navy 90% ); /* Standard syntax */
 
   .content {
-    min-height: 50vh;
+    height: 50vh;
+    min-height: $base-min-height * $xxl-multiplier;
 
     display: -webkit-inline-flex;
     display: -webkit-box;
@@ -68,6 +71,8 @@ footer {
 @media only screen and (max-width: 1920px) {
   .contact {
     .content {
+      min-height: $base-min-height * $xl-multiplier;
+
       img {
         max-width: $base-img-size * $xl-multiplier;
       }
@@ -82,8 +87,8 @@ footer {
 @media only screen and (max-width: 1440px) {
   .contact {
     .content {
-      min-height: 60vh;
-      max-height: none;
+      height: 60vh;
+      min-height: $base-min-height;
 
       img {
         max-width: $base-img-size;
@@ -99,7 +104,7 @@ footer {
 @media only screen and (max-width: 1366px) and (orientation: landscape){ 
   .contact {
     .content {
-      min-height: 40vh;
+      height: 40vh;
     }
 
     header {
@@ -116,7 +121,8 @@ footer {
 @media only screen and (max-width: 1024px) {
   .contact {
     .content {
-      min-height: 40vh;
+      height: 40vh;
+      min-height: $base-min-height * 1.25;
       -webkit-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
 

@@ -50,7 +50,11 @@ $base-hero-section-max-size: 50rem;
     max-height: $base-hero-section-max-size * $xxl-multiplier;
     display: flex;
     align-items: center;
-
+    /*background-image: url( "/assets/images/hero/branches.svg" );
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+    //background-attachment: fixed;
+    
     img {
       max-width: $base-logo-size * $xxl-multiplier;
     }

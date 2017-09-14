@@ -5,7 +5,7 @@
 */
 
 $icon-size: 11rem;
-$module-height: 14rem;
+$module-height: 10rem;
 $module-width: 18%;
 $module-min-width: 12rem;
 $module-padding: 1rem;
@@ -77,7 +77,7 @@ $module-text-padding-top: ($icon-size + 1);
       //margin-top: -$icon-size * $xxl-multiplier;
       width: $icon-size * $xxl-multiplier;
       height: $icon-size * $xxl-multiplier;
-      background: #000076;
+      background: $navy;
       border-radius: 50%;
       z-index: 3;
     }
