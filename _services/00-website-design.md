@@ -2,5 +2,5 @@
 layout: small-module
 title:  "Website Design"
 text: "Enhance your online presence."
-image: ""
+image: "assets/images/icons/web.png"
 ---

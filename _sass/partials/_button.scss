@@ -19,6 +19,12 @@
       color: $yellow;
     }
 
+    &#hero-button {
+      background: $yellow;
+      color: $navy;
+      border: $xxl-px solid $yellow;
+    }
+
     &.highlight {
       background: $orange;
       color: $off-white;
@@ -51,6 +57,10 @@
       border: $xl-px solid $navy;
     }
 
+    &#hero-button {
+      border: $xl-px solid $yellow;
+    }
+
     &.highlight {
       border: $xl-px solid $orange;
     }
@@ -76,6 +86,10 @@
       border: $base-px solid $navy;
     }
 
+    &#hero-button {
+      border: $base-px solid $yellow;
+    }
+
     &.highlight {
       border: $base-px solid $orange;
     }
@@ -98,6 +112,10 @@
 
     &:hover {
       border: $sm-px solid $navy;
+    }
+
+    &#hero-button {
+      border: $sm-px solid $yellow;
     }
 
     &.highlight {
