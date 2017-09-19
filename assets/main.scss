@@ -37,6 +37,7 @@ $glow-duration: 1.75s;
   section {
     width: 100%;
     margin-bottom: $section-margin-bottom * $xxl-multiplier;
+    z-index: 2;
   }
 
   .content {
@@ -48,7 +49,7 @@ $glow-duration: 1.75s;
     width: 100%;
     height: 100%;
     position: absolute;
-    //z-index: -1;
+    z-index: -1;
 
     .light {
       fill: $yellow;
