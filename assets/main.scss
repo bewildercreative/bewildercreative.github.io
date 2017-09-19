@@ -15,6 +15,8 @@ $base-logo-size: 22rem;
 $base-hero-section-min-size: 45rem;
 $base-hero-section-max-size: 50rem;
 
+$hero-img-path: "images/hero/branches-";
+
 $light-radius: 1.25rem;
 $light-glow-radius: $light-radius * 2;
 $glow-duration: 1.75s;
@@ -140,7 +142,7 @@ $glow-duration: 1.75s;
     align-items: center;
     //background: $navy;
     //color: $off-white;
-    background-image: url( "assets/images/hero/branches-desktop.svg" );
+    background-image: url( $hero-img-path + "desktop.svg" );
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -275,26 +277,26 @@ $glow-duration: 1.75s;
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) { 
   #hero {
-    background-image: url( "assets/images/hero/branches-tablet-large-portrait.svg" );
+    background-image: url( $hero-img-path + "tablet-large-portrait.svg" );
   }
 }
 
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) { 
   #hero {
-    background-image: url( "assets/images/hero/branches-tablet-large-portrait.svg" );
+    background-image: url( $hero-img-path + "tablet-large-portrait.svg" );
   }
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) { 
   #hero {
-    background-image: url( "assets/images/hero/branches-tablet-portrait.svg" );
+    background-image: url( $hero-img-path + "tablet-portrait.svg" );
   }
 }
 
 @media only screen and (max-width: 736px) { 
   #hero {
-    background-image: url( "/assets/images/hero/branches-mobile-landscape.svg" );
+    background-image: url( $hero-img-path + "mobile-landscape.svg" );
   }
 }
 
@@ -307,20 +309,20 @@ $glow-duration: 1.75s;
 
 @media only screen and (max-width: 736px) and (orientation: landscape) { 
   #hero {
-    background-image: url( "assets/images/hero/branches-mobile-landscape.svg" );
+    background-image: url( "./assets/images/hero/branches-mobile-landscape.svg" );
   }
 }
 
 @media only screen and (max-width: 640px) and (orientation: portrait) { 
   #hero {
-    background-image: url( "assets/images/hero/branches-mobile-landscape.svg" );
+    background-image: url( $hero-img-path + "mobile-landscape.svg" );
     //background-size: contain;
   }
 }
 
 @media only screen and (max-width: 640px) and (orientation: landscape) { 
   #hero {
-    background-image: url( "assets/images/hero/branches-mobile-small-landscape.svg" );
+    background-image: url( $hero-img-path + "mobile-small-landscape.svg" );
   }
 }
 
