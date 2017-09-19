@@ -49,6 +49,7 @@ $glow-duration: 1.75s;
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
     z-index: -1;
 
     .light {
@@ -97,33 +98,33 @@ $glow-duration: 1.75s;
 
     .light-1 { 
       cx: 30%; 
-      cy: 50%;
+      cy: 40%;
     }
 
     .light-2 {
       cx: 85%; 
-      cy: 65%;
+      cy: 55%;
       -webkit-animation-delay: 0.5s; 
       animation-delay: 0.5s;
     }
 
     .light-3 { 
       cx: 85%; 
-      cy: 25%;
+      cy: 15%;
       -webkit-animation-delay: 0.75s; 
       animation-delay: 0.75s;
     }
 
     .light-4 {
       cx: 20%; 
-      cy: 30%;
+      cy: 20%;
       -webkit-animation-delay: 1s; 
       animation-delay: 1s;
     }
 
     .light-5 { 
       cx: 10%; 
-      cy: 80%;
+      cy: 70%;
       -webkit-animation-delay: 1.25s; 
       animation-delay: 1.25s;
     }
@@ -147,6 +148,7 @@ $glow-duration: 1.75s;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -2;
     //background-attachment: fixed;
 
     //margin-bottom: 4rem;
@@ -287,6 +289,10 @@ $glow-duration: 1.75s;
   #hero {
     background-image: url( $hero-img-path + "tablet-large-portrait.svg" );
   }
+
+  .svg-container {
+    //top: -10%;
+  }
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) { 
@@ -310,8 +316,34 @@ $glow-duration: 1.75s;
 
 @media only screen and (max-width: 736px) and (orientation: landscape) { 
   #hero {
-    background-image: url( "./assets/images/hero/branches-mobile-landscape.svg" );
+    //background-image: url( "./assets/images/hero/branches-mobile-landscape.svg" );
   }
+
+  /*.svg-container {
+    .light-1 { 
+      cx: 30%; 
+      cy: 50%;
+    }
+
+    .light-2 {
+      display: none;
+    }
+
+    .light-3 { 
+      cx: 85%; 
+      cy: 25%;
+      -webkit-animation-delay: 0.75s; 
+      animation-delay: 0.75s;
+    }
+
+    .light-4 {
+      cy: 10%;
+    }
+
+    .light-5 { 
+      display: none;
+    }
+  }*/
 }
 
 @media only screen and (max-width: 640px) and (orientation: portrait) { 
