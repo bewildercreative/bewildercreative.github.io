@@ -37,7 +37,7 @@ $glow-duration: 1.75s;
   section {
     width: 100%;
     margin-bottom: $section-margin-bottom * $xxl-multiplier;
-    z-index: 2;
+    z-index: 3;
   }
 
   .content {
@@ -50,7 +50,8 @@ $glow-duration: 1.75s;
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: -1;
+    z-index: 0;
+    //background: $navy;
 
     .light {
       fill: $yellow;
@@ -148,7 +149,7 @@ $glow-duration: 1.75s;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -2;
+    z-index: -1;
     //background-attachment: fixed;
 
     //margin-bottom: 4rem;
