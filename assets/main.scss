@@ -96,6 +96,7 @@ $glow-duration: 1.75s;
 
     .light {
       fill: $yellow;
+      -moz-opacity: 0.8;
       opacity: 0.8;
       r: $light-radius * $xxl-multiplier;
     }
