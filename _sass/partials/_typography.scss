@@ -65,7 +65,7 @@ $base-h2-line-height: 2rem;
   }
 //}
 
-@media only screen and (max-width: 1920px) { 
+@media only screen and (max-width: $xl-breakpoint) { 
   body {
     font-size: $base-font-size * $xl-multiplier;
   }
@@ -102,7 +102,7 @@ $base-h2-line-height: 2rem;
   }
 }
 
-@media only screen and (max-width: 1440px) { 
+@media only screen and (max-width: $base-breakpoint) { 
   body {
     font-size: $base-font-size;
   }
@@ -230,7 +230,7 @@ $base-h2-line-height: 2rem;
   }
 }
 
-@media only screen and (max-width: 375px) { 
+@media only screen and (max-width: $sm-breakpoint) { 
   body {
     font-size: $base-font-size * $sm-multiplier;
   }

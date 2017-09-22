@@ -147,7 +147,7 @@ $module-text-padding-top: ($icon-size + 1);
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   #services { 
     .module-text {
       width: $module-min-width * $sm-multiplier;

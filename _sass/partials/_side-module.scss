@@ -392,7 +392,142 @@ $module-text-base-height: 14rem;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
+
+  #team { 
+
+    ul {
+      margin-top: -3rem;
+      margin-bottom: 15rem;
+    }
+
+    .icon-container {
+      height: $base-icon-size * $sm-multiplier;
+    }
+
+    .icon {
+      right: 0;
+      margin: 0 auto;
+      //position: relative;
+      position: relative;
+      margin-top: 5rem;
+      //top: 10;
+      //right: 0;
+      z-index: 3;
+      width: $base-icon-size * $sm-multiplier;
+      height: $base-icon-size * $sm-multiplier;
+
+      background-size: $base-icon-bg-size * $sm-multiplier;
+      background-position: 50% ( 2.5rem  * $sm-multiplier );
+    }
+
+    #Janny-icon {
+      background-size: ( $base-icon-bg-size + 1rem ) * $sm-multiplier;
+      background-position: 75% ( 2.25rem  * $sm-multiplier );
+    }
+
+    button {
+      margin: 0 auto;
+      position: static;
+      width: $base-button-width * $sm-multiplier;
+      margin-top: -( ( $base-icon-size  * $sm-multiplier ) / 8);
+      //margin-top: -10rem;
+      z-index: 3;
+      //right: 0;
+      //right: $base-button-offset  * $sm-multiplier;
+    }
+
+    li {
+      padding-bottom: $base-li-padding  * $sm-multiplier;
+      margin-bottom: 8rem;
+
+      .module-text {
+        z-index: 1;
+        margin: 0 auto;
+        position: static;
+        width: 90%;
+        height: $base-icon-size  * $sm-multiplier;
+        padding-top: 3rem;
+        margin-top: -6rem;
+      }
+
+      .blue-line {
+        margin: 0 auto;
+        height: $sm-px;
+        background: $blue;
+        width: 90%;
+        margin-top: $sm-px;
+      }
+
+      p {
+        text-align: center;
+        width: 75%;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 auto;
+      }
+    }
+
+    li:nth-child(even) {
+      .module-text {
+        margin: 0 auto;
+        //margin: 0;
+        text-align: left;
+        padding-top: 3rem;
+        margin-top: -6rem;
+      }
+
+      .blue-line {
+        margin: 0 auto;
+      }
+
+      .icon {
+        left: 0;
+      }
+
+      p {
+        width: 75%;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      /*.icon {
+        left: $base-icon-offset  * $xxl-multiplier;
+      }
+
+      button {
+        left: $base-button-offset  * $xxl-multiplier;
+      }
+
+      .blue-line {
+        margin-left: 0;
+      }*/
+    }
+
+    /*li:nth-child(even) {
+      p {
+        padding-right: $base-text-padding  * $sm-multiplier;
+      }
+
+      .blue-line {
+        margin-left: 0;
+      }
+
+      .icon {
+        left: 0;
+        //left: $base-icon-offset  * $sm-multiplier;
+      }
+
+      button {
+        //left: 0;
+        //left: $base-button-offset  * $sm-multiplier;
+      }
+    }*/
+  }
+}
+
+/*@media only screen and (max-width: 375px) {
   #team { 
     .icon-container {
       height: $base-icon-size * $sm-multiplier;
@@ -457,9 +592,9 @@ $module-text-base-height: 14rem;
       }
     }
   }
-}
+}*/
 
-@media only screen and (max-width: 411px) { 
+/*@media only screen and (max-width: 411px) { 
   #team {
     .icon {
       right: 10rem;
@@ -494,4 +629,4 @@ $module-text-base-height: 14rem;
       }
     }
   }
-}
+}*/

@@ -23,6 +23,11 @@ $xxl-px: 5px;
 
 $sm-px: 2px;
 
+$xxl-breakpoint: 2560px;
+$xl-breakpoint: 1920px;
+$base-breakpoint: 1440px;
+$sm-breakpoint: 414px;
+
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;

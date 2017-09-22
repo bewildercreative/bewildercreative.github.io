@@ -45,6 +45,47 @@ $glow-duration: 1.75s;
     width: 85%;
   }
 
+  header#hero {
+    width: 100%;
+  }
+
+  #hero {
+    margin: 0 auto;
+    padding: 0;
+    height: 80vh;
+    min-height: $base-hero-section-min-size * $xxl-multiplier;
+    max-height: $base-hero-section-max-size * $xxl-multiplier;
+    display: flex;
+    align-items: center;
+    //background: $navy;
+    //color: $off-white;
+    background-image: url( $hero-img-path + "desktop.svg" );
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    //background-attachment: fixed;
+
+    //margin-bottom: 4rem;
+    
+    img {
+      max-width: $base-logo-size * $xxl-multiplier;
+    }
+
+    h2 {
+      width: 30%;
+      min-width: 20rem;
+    }
+  }
+  
+  #lights {
+    //width: 100%;
+    height: 80vh;
+    min-height: $base-hero-section-min-size * $xxl-multiplier;
+    max-height: $base-hero-section-max-size * $xxl-multiplier;
+    //background: black;
+  }
+
   .svg-container {
     width: 100%;
     height: 100%;
@@ -55,7 +96,7 @@ $glow-duration: 1.75s;
 
     .light {
       fill: $yellow;
-      opacity: 1;
+      opacity: 0.8;
       r: $light-radius * $xxl-multiplier;
     }
 
@@ -64,27 +105,27 @@ $glow-duration: 1.75s;
       r: $light-glow-radius * $xxl-multiplier; 
 
       @-webkit-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $xxl-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $xxl-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $xxl-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $xxl-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; color: $off-white; }
       }
 
       @-moz-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $xxl-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $xxl-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $xxl-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $xxl-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; color: $off-white; }
       }
 
       @keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $xxl-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $xxl-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $xxl-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $xxl-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; color: $off-white; }
       }
 
       opacity: 0.25;
@@ -131,39 +172,6 @@ $glow-duration: 1.75s;
     }
   }
 
-  header#hero {
-    width: 100%;
-  }
-
-  #hero {
-    margin: 0 auto;
-    padding: 0;
-    height: 80vh;
-    min-height: $base-hero-section-min-size * $xxl-multiplier;
-    max-height: $base-hero-section-max-size * $xxl-multiplier;
-    display: flex;
-    align-items: center;
-    //background: $navy;
-    //color: $off-white;
-    background-image: url( $hero-img-path + "desktop.svg" );
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    //background-attachment: fixed;
-
-    //margin-bottom: 4rem;
-    
-    img {
-      max-width: $base-logo-size * $xxl-multiplier;
-    }
-
-    h2 {
-      width: 30%;
-      min-width: 20rem;
-    }
-  }
-
   ::selection {
       background-color: $yellow;
       color: $navy;
@@ -185,6 +193,12 @@ $glow-duration: 1.75s;
     }
   }
 
+  #lights {
+    height: 85vh;
+    min-height: $base-hero-section-min-size * $xl-multiplier;
+    max-height: $base-hero-section-max-size * $xl-multiplier;
+  }
+
   .svg-container {
     .light {
       r: $light-radius * $xl-multiplier;
@@ -195,27 +209,27 @@ $glow-duration: 1.75s;
       r: $light-glow-radius * $xl-multiplier; 
 
       @-webkit-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $xl-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $xl-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $xl-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $xl-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; color: $off-white; }
       }
 
       @-moz-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $xl-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $xl-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $xl-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $xl-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; color: $off-white; }
       }
 
       @keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $xl-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $xl-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $xl-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $xl-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; color: $off-white; }
       }
     }
   }
@@ -236,6 +250,12 @@ $glow-duration: 1.75s;
     }
   }
 
+  #lights {
+    height: 90vh;
+    min-height: $base-hero-section-min-size;
+    max-height: $base-hero-section-max-size;
+  }
+
   .svg-container {
     .light {
       r: $light-radius;
@@ -246,27 +266,27 @@ $glow-duration: 1.75s;
       r: $light-glow-radius; 
 
       @-webkit-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius; color: $off-white; }
       }
 
       @-moz-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius; color: $off-white; }
       }
 
       @keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius; color: $off-white; }
       }
     }
   }
@@ -274,6 +294,11 @@ $glow-duration: 1.75s;
 
 @media only screen and (max-width: 1024px) { 
   #hero {
+    height: 60vh;
+    min-height: 45rem;
+  }
+
+  #lights {
     height: 60vh;
     min-height: 45rem;
   }
@@ -300,6 +325,12 @@ $glow-duration: 1.75s;
   #hero {
     background-image: url( $hero-img-path + "tablet-portrait.svg" );
   }
+
+  .svg-container {
+    .light-1 { 
+      display: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 736px) { 
@@ -318,6 +349,12 @@ $glow-duration: 1.75s;
 @media only screen and (max-width: 736px) and (orientation: landscape) { 
   #hero {
     //background-image: url( "./assets/images/hero/branches-mobile-landscape.svg" );
+  }
+  
+  .svg-container {
+    .light-1 { 
+      display: none;
+    }
   }
 
   /*.svg-container {
@@ -377,27 +414,27 @@ $glow-duration: 1.75s;
       r: $light-glow-radius * $sm-multiplier; 
 
       @-webkit-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $sm-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $sm-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $sm-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $sm-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; color: $off-white; }
       }
 
       @-moz-keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $sm-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $sm-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $sm-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $sm-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; color: $off-white; }
       }
 
       @keyframes glow { 
-        0% { opacity: 0.5; r: $light-glow-radius * $sm-multiplier; } 
+        0% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; } 
         25% { opacity: 0.25; }
-        50% { opacity: 0.0; r: $light-radius * 1.25 * $sm-multiplier; } 
+        50% { opacity: 0.0; } //r: $light-radius * 1.25 * $sm-multiplier; } 
         75% { opacity: 0.25; }
-        100% { opacity: 0.5; r: $light-glow-radius * $sm-multiplier; color: $off-white; }
+        100% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; color: $off-white; }
       }
     }
   }
