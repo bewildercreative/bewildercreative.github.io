@@ -98,11 +98,13 @@ $glow-duration: 1.75s;
       fill: $yellow;
       -moz-opacity: 0.8;
       opacity: 0.8;
+      //r: 2%;
       r: $light-radius * $xxl-multiplier;
     }
 
     .light-glow {
       opacity: 0.5;
+      //r: 4%;
       r: $light-glow-radius * $xxl-multiplier; 
 
       @-webkit-keyframes glow { 

@@ -9,7 +9,7 @@
     font-family: $body-font-family;
     padding: 1rem * $xxl-multiplier;
     margin-top: 1rem;
-    min-width: 12rem;
+    min-width: 14rem;
     border: $xxl-px solid $blue;
 
     &:hover {
@@ -50,7 +50,7 @@
   button {
     padding: 1rem * $xl-multiplier;
     margin-top: 1rem;
-    min-width: 12rem; 
+    min-width: 14rem;
     border: $xl-px solid $blue;
 
     &:hover {
@@ -79,7 +79,7 @@
   button {
     padding: 1rem;
     margin-top: 1rem;
-    min-width: 12rem;
+    min-width:12rem;
     border: $base-px solid $blue;
 
     &:hover {

@@ -5,7 +5,7 @@
 - fix header widths on mobile
 */
 
-$base-font-size: 0.95rem;
+$base-font-size: 1rem;
 $base-line-height: 1.5rem;
 $base-header-size: 2.25rem;
 $base-h2-size: 1.5rem;
@@ -242,6 +242,7 @@ $base-h2-line-height: 2rem;
   h2 {
     font-size: $base-h2-size * $sm-multiplier;
     line-height: $base-h2-line-height * $sm-multiplier;
+    width: 75vw;
   }
 
   p {

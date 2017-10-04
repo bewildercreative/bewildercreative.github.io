@@ -4,8 +4,9 @@ $button-margin: 0.25rem;
 $half-page-width: 45%;
 $half-page-min-width: 20rem;
 $half-page-margin: 0.75rem;
-$base-img-size: 20rem;
+$base-img-size: 22rem;
 $base-min-height: 30rem;
+$base-button-width: 12rem;
 
 $base-copyright-height: 5rem;
 
@@ -40,6 +41,7 @@ section.contact {
 
   button {
     margin: $button-margin;
+    min-width: $base-button-width * $xxl-multiplier;
   }
 
   .contact-buttons {
@@ -76,6 +78,10 @@ footer {
       img {
         max-width: $base-img-size * $xl-multiplier;
       }
+
+      button {
+        min-width: $base-button-width * $xl-multiplier;
+      }
     }
   }
 
@@ -89,6 +95,10 @@ footer {
     .content {
       height: 60vh;
       min-height: $base-min-height;
+
+      button {
+        min-width: $base-button-width;
+      }
 
       img {
         max-width: $base-img-size;
@@ -127,6 +137,7 @@ footer {
       flex-wrap: wrap-reverse;
 
       img {
+        max-width: 20rem;
         margin-top: 1rem;
         margin-bottom: -2rem;
       }
@@ -144,18 +155,22 @@ footer {
   } 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: $sm-breakpoint) {
   .contact {
     .content {
+      button {
+        min-width: $base-button-width * $sm-multiplier;
+      }
+
       img {
         max-width: $base-img-size * $sm-multiplier;
       }
     }
-  }
 
-  .half-page {
-    width: 48%;
-    min-width: $half-page-min-width;
-    margin: $half-page-margin;
-  } 
+    .half-page {
+      width: 48%;
+      min-width: $half-page-min-width;
+      margin: $half-page-margin * $sm-multiplier;
+    } 
+  }
 }

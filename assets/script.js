@@ -6,6 +6,10 @@ $( document ).ready( function() {
     $( window ).scroll( function(){
         //console.log(1 - $( window ).scrollTop() / 300);
         $( ".svg-container" ).css( "opacity", 1 - $( window ).scrollTop() / 300 );
+
+        /*if () {
+          $( ".svg-container" ).hide();
+        }*/
     });
 
     $(window).resize( function(){
