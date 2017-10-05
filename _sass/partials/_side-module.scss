@@ -8,13 +8,19 @@ $base-text-padding: 8rem;
 $base-li-padding: 3rem;
 $base-button-width: 12rem;
 
+$base-xxl-offset: 59rem;
+$base-xxl-button-offset: 39rem;
+
+$base-xl-offset: 49rem;
+$base-xl-button-offset: 29rem;
+
 $module-text-base-width: 50rem;
 $module-text-base-height: 14rem;
 
 //@media only screen and (max-width: 2560px) {
   #team { 
     .content {
-      width: 100%;
+      width: 75%;
     }
 
     ul {
@@ -30,7 +36,8 @@ $module-text-base-height: 14rem;
 
     .icon {
       position: absolute;
-      right: $base-icon-offset * $xxl-multiplier;
+      //right: $base-icon-offset * $xxl-multiplier;
+      right: $base-xxl-offset * $xxl-multiplier;
       width: $base-icon-size * $xxl-multiplier;
       height: $base-icon-size * $xxl-multiplier;
       background: $navy;
@@ -50,7 +57,7 @@ $module-text-base-height: 14rem;
       position: absolute;
       width: $base-button-width * $xxl-multiplier;
       margin-top: -( ($base-icon-size  * $xxl-multiplier) / 8);
-      right: $base-button-offset  * $xxl-multiplier;
+      right: $base-xxl-button-offset  * $xxl-multiplier;
     }
 
     li {
@@ -106,11 +113,12 @@ $module-text-base-height: 14rem;
       }
 
       .icon {
-        left: $base-icon-offset  * $xxl-multiplier;
+        //left: $base-icon-offset  * $xxl-multiplier;
+        left: $base-xxl-offset * $xxl-multiplier;
       }
 
       button {
-        left: $base-button-offset  * $xxl-multiplier;
+        left: $base-xxl-button-offset  * $xxl-multiplier;
       }
 
       .blue-line {
@@ -120,14 +128,19 @@ $module-text-base-height: 14rem;
   }
 //}
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: $xl-breakpoint) {
   #team { 
+    .content {
+      width: 90%;
+    }
+
     .icon-container {
       height: $base-icon-size * $xl-multiplier;
     }
 
     .icon {
-      right: $base-icon-offset  * $xl-multiplier;
+      //right: $base-icon-offset  * $xl-multiplier;
+      right: $base-xl-offset  * $xl-multiplier;
       width: $base-icon-size  * $xl-multiplier;
       height: $base-icon-size  * $xl-multiplier;
 
@@ -143,7 +156,7 @@ $module-text-base-height: 14rem;
     button {
       width: $base-button-width * $xl-multiplier;
       margin-top: -( ( $base-icon-size  * $xl-multiplier ) / 8);
-      right: $base-button-offset  * $xl-multiplier;
+      right: $base-xl-button-offset  * $xl-multiplier;
     }
 
     li {
@@ -176,11 +189,11 @@ $module-text-base-height: 14rem;
       }
 
       .icon {
-        left: $base-icon-offset  * $xl-multiplier;
+        left: $base-xl-offset  * $xl-multiplier;
       }
 
       button {
-        left: $base-button-offset  * $xl-multiplier;
+        left: $base-xl-button-offset  * $xl-multiplier;
       }
     }
   }
@@ -188,6 +201,10 @@ $module-text-base-height: 14rem;
 
 @media only screen and (max-width: 1440px) {
   #team { 
+    .content {
+      width: 100%;
+    }
+
     .icon-container {
       height: $base-icon-size;
       padding-bottom: 1.5rem;
