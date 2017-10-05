@@ -60,6 +60,20 @@ $base-h2-line-height: 2rem;
     }
   }
 
+  .contact {
+    header {
+      width: 100%;
+      margin: 0 auto;
+
+      p {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+    }
+  }
+
   button {
     font-size: $base-font-size * $xxl-multiplier;
   }

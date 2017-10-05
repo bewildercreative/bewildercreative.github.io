@@ -6,6 +6,7 @@ $half-page-min-width: 20rem;
 $half-page-margin: 0.75rem;
 $base-img-size: 22rem;
 $base-min-height: 30rem;
+$base-max-height: 26rem;
 $base-button-width: 12rem;
 
 $base-copyright-height: 5rem;
@@ -19,8 +20,13 @@ section.contact {
   //background: linear-gradient( $off-white 40%, $navy 90% ); /* Standard syntax */
 
   .content {
+    width: 65%;
+    max-width: 90rem;
+    //width: 100rem;
+    //max-width: 100rem;
     height: 50vh;
-    min-height: $base-min-height * $xxl-multiplier;
+    //min-height: $base-min-height * $xxl-multiplier;
+    max-height: $base-max-height * $xxl-multiplier;
 
     display: -webkit-inline-flex;
     display: -webkit-box;
@@ -58,6 +64,8 @@ section.contact {
   width: $half-page-width;
   min-width: $half-page-min-width;
   margin: $half-page-margin;
+
+  //background: $off-white;
 }
 
 footer {
@@ -73,6 +81,7 @@ footer {
 @media only screen and (max-width: 1920px) {
   .contact {
     .content {
+      width: 80%;
       min-height: $base-min-height * $xl-multiplier;
 
       img {
@@ -94,6 +103,7 @@ footer {
   .contact {
     .content {
       height: 60vh;
+      min-width: 100%;
       min-height: $base-min-height;
 
       button {
