@@ -54,10 +54,10 @@ $module-text-padding-top: ($icon-size + 1);
    .blue-line {
       margin: 0 auto;
       position: relative;
-      bottom: $xxl-px * 3 + 4;
+      bottom: $xxl-px * 3;
       height: $xxl-px;
       background: $blue;
-      width: ( $module-min-width * $xxl-multiplier ) + ( $module-min-width / 3 );
+      width: ( $module-min-width * $xxl-multiplier ) + 2.5rem;
       padding: 0;
     }
 
