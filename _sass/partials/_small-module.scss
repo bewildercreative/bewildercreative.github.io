@@ -54,7 +54,7 @@ $module-text-padding-top: ($icon-size + 1);
    .blue-line {
       margin: 0 auto;
       position: relative;
-      bottom: $xxl-px * 3;
+      bottom: $xxl-px * 2.75;
       height: $xxl-px;
       background: $blue;
       width: ( $module-min-width * $xxl-multiplier ) + 2.5rem;
@@ -97,9 +97,11 @@ $module-text-padding-top: ($icon-size + 1);
     }
 
     .blue-line {
-      bottom: ( $xl-px * 3 ) + 2;
+      //bottom: ( $xl-px * 3 ) + 2;
+      bottom: $xxl-px * 2.25;
       height: $xl-px;
-      width: ( $module-min-width * $xl-multiplier ) + ( $module-min-width / 4 );
+      //width: ( $module-min-width * $xl-multiplier ) + ( $module-min-width / 4 );
+      width: ( $module-min-width * $xl-multiplier ) + 2;
     }
 
     h3 {
