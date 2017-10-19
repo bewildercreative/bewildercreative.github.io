@@ -59,12 +59,18 @@ $glow-duration: 1.75s;
     align-items: center;
     //background: $navy;
     //color: $off-white;
-    background-image: url( $hero-img-path + "desktop-large.svg" );
-    //background-image: url( $hero-img-path + "left.svg" );
-    //background-image: url( $hero-img-path + "right.svg" );
+    /*background-image: url( $hero-img-path + "desktop-large.svg" );
     background-size: auto 100%;
     background-position: center;
+    background-repeat: no-repeat;*/
+
+    //background-image: url( $hero-img-path + "left.svg" );
+    //background-image: url( $hero-img-path + "right.svg" );
+    
+    background-image: url( $hero-img-path + "left.svg" ), url( $hero-img-path + "right.svg" );
+    background-position: center left, right top;
     background-repeat: no-repeat;
+
     z-index: -1;
     //background-attachment: fixed;
 
@@ -192,7 +198,7 @@ $glow-duration: 1.75s;
     height: 85vh;
     min-height: $base-hero-section-min-size * $xl-multiplier;
     max-height: $base-hero-section-max-size * $xl-multiplier;
-    background-image: url( $hero-img-path + "desktop.svg" );
+    //background-image: url( $hero-img-path + "desktop.svg" );
 
     img {
       max-width: $base-logo-size * $xl-multiplier;
@@ -250,6 +256,10 @@ $glow-duration: 1.75s;
     height: 90vh;
     min-height: $base-hero-section-min-size;
     max-height: $base-hero-section-max-size;
+
+    background-image: url( $hero-img-path + "desktop.svg" );
+    background-size: auto 100%;
+    background-position: center;
 
     img {
       max-width: $base-logo-size;
