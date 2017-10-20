@@ -66,6 +66,10 @@ $glow-duration: 1.75s;
 
     //background-image: url( $hero-img-path + "left.svg" );
     //background-image: url( $hero-img-path + "right.svg" );
+
+    //background: $navy;
+    //color: $off-white;
+    //background: linear-gradient( $navy, $white );
     
     background-image: url( $hero-img-path + "left.svg" ), url( $hero-img-path + "right.svg" );
     background-position: center left, right top;
@@ -74,7 +78,7 @@ $glow-duration: 1.75s;
     z-index: -1;
     //background-attachment: fixed;
 
-    //margin-bottom: 4rem;
+    margin-bottom: 4rem;
     
     img {
       max-width: $base-logo-size * $xxl-multiplier;

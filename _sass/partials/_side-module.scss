@@ -457,8 +457,8 @@ $module-text-base-height: 14rem;
       margin: 0 auto;
       position: static;
       width: $base-button-width * $sm-multiplier;
-      margin-top: -( ( $base-icon-size  * $sm-multiplier ) / 8);
-      //margin-top: -10rem;
+      //margin-top: -( ( $base-icon-size  * $sm-multiplier ) / 8);
+      margin-top: -3rem;
       z-index: 3;
       //right: 0;
       //right: $base-button-offset  * $sm-multiplier;
@@ -506,6 +506,7 @@ $module-text-base-height: 14rem;
 
       .blue-line {
         margin: 0 auto;
+        margin-top: $sm-px;
       }
 
       .icon {
