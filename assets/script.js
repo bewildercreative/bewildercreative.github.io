@@ -1,7 +1,7 @@
 $( document ).ready( function() {
     $(".svg-container").css( "position", "fixed" );
     $("#hero").css( "background-color", "rgba( 0, 0, 118, 1 )" );
-    //$("#hero").css( "background-color", "linear-gradient( rgba( 0, 0, 118, 1 ), rgba( 224, 211, 209, 1 ) )" );
+    $("#hero").css( "background-color", "linear-gradient( rgba( 0, 0, 118, 1 ), rgba( 224, 211, 209, 1 ) )" );
     $("#hero").css( "color", "#f5f1f1" );
 
     $( window ).scroll( function(){

@@ -18,6 +18,8 @@ $base-hero-section-max-size: 50rem;
 $hero-img-path: "images/hero/branches-";
 
 $light-radius: 1.25rem;
+$light-radius-s-multiplier: 0.5;
+$light-radius-m-multiplier: 0.33;
 $light-glow-radius: $light-radius * 2;
 $glow-duration: 1.75s;
 
@@ -110,14 +112,12 @@ $glow-duration: 1.75s;
       fill: $yellow;
       -moz-opacity: 0.8;
       opacity: 0.8;
-      //r: 2%;
-      r: $light-radius * $xxl-multiplier;
+      //r: $light-radius * $xxl-multiplier;
     }
 
     .light-glow {
       opacity: 0.5;
-      //r: 4%;
-      r: $light-glow-radius * $xxl-multiplier; 
+      //r: $light-glow-radius * $xxl-multiplier; 
 
       @-webkit-keyframes glow { 
         0% { opacity: 0.5; } //r: $light-glow-radius * $xxl-multiplier; } 
@@ -217,12 +217,12 @@ $glow-duration: 1.75s;
 
   .svg-container {
     .light {
-      r: $light-radius * $xl-multiplier;
+      //r: $light-radius * $xl-multiplier;
     }
 
     .light-glow {
       opacity: 0.5;
-      r: $light-glow-radius * $xl-multiplier; 
+      //r: $light-glow-radius * $xl-multiplier; 
 
       @-webkit-keyframes glow { 
         0% { opacity: 0.5; } //r: $light-glow-radius * $xl-multiplier; } 
@@ -278,12 +278,12 @@ $glow-duration: 1.75s;
 
   .svg-container {
     .light {
-      r: $light-radius;
+      //r: $light-radius;
     }
 
     .light-glow {
       opacity: 0.5;
-      r: $light-glow-radius; 
+      //r: $light-glow-radius; 
 
       @-webkit-keyframes glow { 
         0% { opacity: 0.5; } //r: $light-glow-radius; } 
@@ -345,12 +345,6 @@ $glow-duration: 1.75s;
   #hero {
     background-image: url( $hero-img-path + "tablet-portrait.svg" );
   }
-
-  .svg-container {
-    .light-1 { 
-      display: none;
-    }
-  }
 }
 
 @media only screen and (max-width: 736px) { 
@@ -373,6 +367,10 @@ $glow-duration: 1.75s;
   
   .svg-container {
     .light-1 { 
+      //display: none;
+    }
+
+    .light-2 {
       display: none;
     }
   }
@@ -408,6 +406,16 @@ $glow-duration: 1.75s;
   #hero {
     background-image: url( $hero-img-path + "mobile-landscape.svg" );
     //background-size: contain;
+
+    .svg-container {
+      .light-1 { 
+        //display: none;
+      }
+
+      .light-3, .light-5, .light-6 {
+        display: none;
+      }
+    }
   }
 }
 
@@ -426,12 +434,12 @@ $glow-duration: 1.75s;
 
   .svg-container {
     .light {
-      r: $light-radius * $sm-multiplier;
+      //r: $light-radius * $sm-multiplier;
     }
 
     .light-glow {
       opacity: 0.5;
-      r: $light-glow-radius * $sm-multiplier; 
+      //r: $light-glow-radius * $sm-multiplier; 
 
       @-webkit-keyframes glow { 
         0% { opacity: 0.5; } //r: $light-glow-radius * $sm-multiplier; } 
