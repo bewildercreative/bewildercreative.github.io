@@ -419,8 +419,8 @@ $module-text-base-height: 14rem;
   }
 }
 
-@media only screen and (max-width: 414px) {
-
+//@media only screen and (max-width: 414px) {
+@media only screen and (max-width: $sm-breakpoint) {
   #team { 
 
     ul {

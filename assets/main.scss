@@ -425,7 +425,8 @@ $glow-duration: 1.75s;
   }
 }
 
-@media only screen and (max-width: 375px) {
+//@media only screen and (max-width: 375px) {
+@media only screen and (max-width: $sm-breakpoint) {
   #hero {
     img {
       max-width: $base-logo-size * $sm-multiplier;
