@@ -20,7 +20,7 @@ $module-text-base-height: 14rem;
 //@media only screen and (max-width: 2560px) {
   #team { 
     .content {
-      width: 100rem;
+      width: 75rem;
       margin: 0 auto;
       //max-width: 100rem;
     }
@@ -33,15 +33,16 @@ $module-text-base-height: 14rem;
 
     .icon-container {
       position: relative;
-      width: 100rem;
+      width: 75rem;
       height: $base-icon-size * $xxl-multiplier;
       padding-bottom: 1.5rem;
     }
 
     .icon {
       position: absolute;
-      right: $base-icon-offset * $xxl-multiplier;
+      //right: $base-icon-offset * $xxl-multiplier;
       //right: $base-xxl-offset * $xxl-multiplier;
+      right: 51rem;
       width: $base-icon-size * $xxl-multiplier;
       height: $base-icon-size * $xxl-multiplier;
       background: $navy;
@@ -61,7 +62,8 @@ $module-text-base-height: 14rem;
       position: absolute;
       width: $base-button-width * $xxl-multiplier;
       margin-top: -( ($base-icon-size  * $xxl-multiplier) / 8);
-      right: $base-button-offset  * $xxl-multiplier;
+      //right: $base-button-offset  * $xxl-multiplier;
+      right: 18rem;
     }
 
     li {
@@ -76,7 +78,8 @@ $module-text-base-height: 14rem;
         display: -webkit-flex;
         display: flex;
         align-items: center;
-        width: $module-text-base-width  * $xxl-multiplier;
+        //width: $module-text-base-width  * $xxl-multiplier;
+        width: 58rem;
         height: $base-icon-size  * $xxl-multiplier;
         background: $grey;
         text-align: left;
@@ -118,11 +121,13 @@ $module-text-base-height: 14rem;
 
       .icon {
         //left: $base-icon-offset  * $xxl-multiplier;
-        left: $base-icon-offset * $xxl-multiplier;
+        //left: $base-icon-offset * $xxl-multiplier;
+        left: 51rem;
       }
 
       button {
-        left: $base-button-offset  * $xxl-multiplier;
+        //left: $base-button-offset  * $xxl-multiplier;
+        left: 18rem;
       }
 
       .blue-line {
