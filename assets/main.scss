@@ -87,8 +87,9 @@ $glow-duration: 1.75s;
     }
 
     h2 {
-      width: 30%;
+      width: 32%;
       min-width: 20rem;
+      max-width: 35rem;
     }
   }
   
@@ -206,6 +207,10 @@ $glow-duration: 1.75s;
 
     img {
       max-width: $base-logo-size * $xl-multiplier;
+    }
+
+    h2 {
+      max-width: 30rem;
     }
   }
 
@@ -371,7 +376,9 @@ $glow-duration: 1.75s;
     }
 
     .light-2 {
-      display: none;
+      //display: none;
+      cx: 80%; 
+      cy: 35%;
     }
   }
 
@@ -413,7 +420,12 @@ $glow-duration: 1.75s;
       }
 
       .light-3, .light-5, .light-6 {
-        display: none;
+        //display: none;
+      }
+
+      .light-5{
+        cx: 25%;
+        cy: 70%;
       }
     }
   }
@@ -436,6 +448,10 @@ $glow-duration: 1.75s;
   .svg-container {
     .light {
       //r: $light-radius * $sm-multiplier;
+    }
+
+    .light-6 {
+      display: none;
     }
 
     .light-glow {
