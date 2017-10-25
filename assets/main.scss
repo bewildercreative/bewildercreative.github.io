@@ -6,11 +6,12 @@
 @import "partials/transitions";
 @import "partials/button";
 @import "partials/typography";
+@import "partials/nav";
 @import "partials/footer";
 @import "partials/small-module";
 @import "partials/side-module";
 
-$section-margin-bottom: 5rem;
+$section-margin-bottom: 2rem;
 $base-logo-size: 22rem;
 $base-hero-section-min-size: 45rem;
 $base-hero-section-max-size: 50rem;
@@ -38,7 +39,8 @@ $glow-duration: 1.75s;
 
   section {
     width: 100%;
-    margin-bottom: $section-margin-bottom * $xxl-multiplier;
+    padding-top: 4rem;
+    margin-bottom: $section-margin-bottom; // * $xxl-multiplier;
     z-index: 3;
   }
 
@@ -80,6 +82,7 @@ $glow-duration: 1.75s;
     z-index: -1;
     //background-attachment: fixed;
 
+    margin-top: 3rem;
     margin-bottom: 4rem;
     
     img {
@@ -107,6 +110,7 @@ $glow-duration: 1.75s;
     position: absolute;
     top: 0;
     z-index: 0;
+    padding-top: 4rem;
     //background: $navy;
 
     .light {
@@ -196,7 +200,7 @@ $glow-duration: 1.75s;
 
 @media only screen and (max-width: 1920px) {
   section {
-    margin-bottom: $section-margin-bottom * $xl-multiplier;
+    margin-bottom: $section-margin-bottom; // * $xl-multiplier;
   }
 
   #hero {

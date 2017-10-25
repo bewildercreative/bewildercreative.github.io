@@ -1,0 +1,65 @@
+@import "base";
+
+$height: 4rem;
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: $off-white;
+  color: $blue;
+  border-bottom: $xxl-px solid $blue;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 5;
+  text-align: right;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    height: $height;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      margin-left: 0.5rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  a {
+    @include transition(color .25s);
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+@media only screen and (max-width: $xl-breakpoint) {
+  nav {
+    border-bottom: $xl-px solid $blue;
+  }
+}
+
+@media only screen and (max-width: $base-breakpoint) {
+  nav {
+    border-bottom: $base-px solid $blue;
+  }
+}
+
+@media only screen and (max-width: $sm-breakpoint) {
+  nav {
+    border-bottom: $sm-px solid $blue;
+
+    ul {
+      height: $height * $sm-multiplier;
+    }
+  }
+}
