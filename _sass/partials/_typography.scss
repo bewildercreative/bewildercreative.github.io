@@ -56,8 +56,8 @@ $base-h2-line-height: 2rem;
       margin: 0 auto;
       margin-top: 1.5rem;
       margin-bottom: 2rem;
-      width: 30vw;
-      max-width: 35rem;
+      width: 35vw;
+      max-width: 40rem;
     }
   }
 
@@ -138,14 +138,14 @@ $base-h2-line-height: 2rem;
   }
 
   header {
-    width: 35vw;
+    width: 40vw;
     margin: 0 auto;
 
     p {
       margin: 0 auto;
       margin-top: 1.5rem;
       margin-bottom: 2rem;
-      width: 30vw;
+      width: 40vw;
     }
   }
 
@@ -235,12 +235,14 @@ $base-h2-line-height: 2rem;
   }
 }
 
-@media only screen and (max-width: 732px) { 
+@media only screen and (max-width: 732px) and (orientation: landscape) { 
   header {
-    min-width: 18rem;
+    width: 75vw;
+    //min-width: 20rem;
   
     p {
-      min-width: 17rem;
+      width: 75vw;
+      //min-width: 20rem;
     }
   }
 }
@@ -266,6 +268,14 @@ $base-h2-line-height: 2rem;
 
   button {
     font-size: $base-font-size * $sm-multiplier;
+  }
+
+    header {
+      min-width: 19rem;
+  
+    p {
+      min-width: 19rem;
+    }
   }
 }
 

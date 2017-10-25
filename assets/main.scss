@@ -82,8 +82,8 @@ $glow-duration: 1.75s;
     z-index: -1;
     //background-attachment: fixed;
 
-    margin-top: 3rem;
-    margin-bottom: 4rem;
+    //margin-top: 3rem;
+    //margin-bottom: 4rem;
     
     img {
       max-width: $base-logo-size * $xxl-multiplier;
@@ -110,7 +110,7 @@ $glow-duration: 1.75s;
     position: absolute;
     top: 0;
     z-index: 0;
-    padding-top: 4rem;
+    //padding-top: 4rem;
     //background: $navy;
 
     .light {

@@ -3,6 +3,7 @@
 $height: 4rem;
 
 nav {
+  display: none;
   position: fixed;
   width: 100%;
   background: $off-white;
@@ -12,6 +13,9 @@ nav {
   padding: 0;
   z-index: 5;
   text-align: right;
+  /*position: sticky;
+  position: -webkit-sticky;
+  top: 0;*/
 
   ul {
     margin: 0;

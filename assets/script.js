@@ -1,5 +1,14 @@
-$( document ).ready( function() {
+window.onload = function(){ 
   $(".svg-container").css( "position", "fixed" );
+  $( "nav" ).css( "display", "none" );
+
+  $(window).resize( function(){
+      $( "#lights" ).load(window.location.href + " #lights" );
+      //location.reload();
+  });
+}
+
+$( document ).ready( function() {
   //$("#hero").css( "background-color", "rgba( 0, 0, 118, 1 )" );
   //$("#hero").css( "background-color", "linear-gradient( rgba( 0, 0, 118, 1 ), rgba( 224, 211, 209, 1 ) )" );
   //$("#hero").css( "color", "#f5f1f1" );
@@ -17,11 +26,12 @@ $( document ).ready( function() {
       } else {
         $( ".svg-container" ).show();
       }
-  });
 
-  $(window).resize( function(){
-      $( "#lights" ).load(window.location.href + " #lights" );
-      //location.reload();
+      if ( $( window ).scrollTop() == 0 ) {
+        $( "nav" ).fadeOut();
+      } else {
+        $( "nav" ).fadeIn();
+      }
   });
 
     // Select all links with hashes
