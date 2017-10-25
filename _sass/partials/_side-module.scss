@@ -53,10 +53,10 @@ $module-text-base-height: 14rem;
       background-position: 50% ( 2.5rem  * $xxl-multiplier );
     }
 
-    #Janny-icon {
-      background-size: 11rem  * $xxl-multiplier;
-      background-position: 75% ( 2.25rem  * $xxl-multiplier );
-    }
+    /*#Janny-icon {
+      background-size: 10.5rem  * $xxl-multiplier;
+      background-position: 50% ( 2.25rem  * $xxl-multiplier );
+    }*/
 
     button {
       position: absolute;
@@ -159,10 +159,10 @@ $module-text-base-height: 14rem;
       background-position: 50% ( 2.5rem  * $xl-multiplier );
     }
 
-    #Janny-icon {
+    /*#Janny-icon {
       background-size: ( $base-icon-bg-size + 1rem ) * $xl-multiplier;
       background-position: 75% ( 2.25rem  * $xl-multiplier );
-    }
+    }*/
 
     button {
       width: $base-button-width * $xl-multiplier;
@@ -233,10 +233,10 @@ $module-text-base-height: 14rem;
       background-position: 50% 2.5rem;
     }
 
-    #Janny-icon {
+/*#Janny-icon {
       background-size: $base-icon-bg-size + 1rem;
       background-position: 75% 2.25rem;
-    }
+    }*/
 
     button {
       position: absolute;
@@ -453,10 +453,10 @@ $module-text-base-height: 14rem;
       background-position: 50% ( 2.5rem  * $sm-multiplier );
     }
 
-    #Janny-icon {
+    /*#Janny-icon {
       background-size: ( $base-icon-bg-size + 1rem ) * $sm-multiplier;
       background-position: 75% ( 2.25rem  * $sm-multiplier );
-    }
+    }*/
 
     button {
       margin: 0 auto;
