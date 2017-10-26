@@ -251,6 +251,20 @@ $base-h2-line-height: 2rem;
   }
 }
 
+
+
+@media only screen and (max-width: 464px) { 
+  header {
+    min-width: 20rem;
+    //min-width: 20rem;
+  
+    p {
+      min-width: 20rem;
+      //min-width: 20rem;
+    }
+  }
+}
+
 @media only screen and (max-width: $sm-breakpoint) { 
   body {
     font-size: $base-font-size * $sm-multiplier;
