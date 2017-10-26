@@ -51,14 +51,17 @@ layout: default
             </div>
             
             <div class="module-text">
-              <p>
-                {{ side-module.text | escape }}
-              </p>
+              <div class="module-content">
+                <h3>{{ side-module.title | escape }}</h3>
+                <p>
+                  {{ side-module.text | escape }}
+                </p>
+              </div>
             </div>
 
             <!--<div class="blue-line" />-->
 
-            <a href=" {{ side-module.URL | escape }} " target="_blank"><button>{{ side-module.title | escape }}'s Portfolio</button></a>
+            <a href=" {{ side-module.URL | escape }} " target="_blank"><button>{{ side-module.button | escape }}</button></a>
             
           </li>
         {% endfor %}
