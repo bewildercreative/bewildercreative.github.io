@@ -1,7 +1,7 @@
 @import "base";
 
 $base-icon-size: 14rem;
-$base-module-height: 17rem;
+$base-module-height: 18rem;
 $base-icon-offset: 45rem;
 $base-button-offset: 25rem;
 $base-icon-bg-size: 10.5rem; // 11 for JT
@@ -44,7 +44,7 @@ $module-text-base-height: 14rem;
       //right: $base-icon-offset * $xxl-multiplier;
       //right: $base-xxl-offset * $xxl-multiplier;
       right: 51rem;
-      margin-top: 1.5rem;
+      margin-top: ( $base-module-height - $base-icon-size )/2;
       width: $base-icon-size * $xxl-multiplier;
       height: $base-icon-size * $xxl-multiplier;
       background: $navy;
