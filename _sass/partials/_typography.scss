@@ -48,6 +48,10 @@ $base-h2-line-height: 2rem;
     line-height: $base-line-height * $xxl-multiplier;
   }
 
+  b {
+    font-weight: 500;
+  }
+
   header {
     width: 35vw;
     margin: 0 auto;

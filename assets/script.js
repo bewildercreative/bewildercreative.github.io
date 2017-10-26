@@ -27,6 +27,8 @@ $( document ).ready( function() {
         $( ".svg-container" ).show();
       }
 
+      $( "nav" ).fadeIn();
+
       if ( $( window ).scrollTop() == 0 ) {
         $( "nav" ).fadeOut();
       } else {
