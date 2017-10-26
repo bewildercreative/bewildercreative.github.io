@@ -325,6 +325,38 @@ $module-text-base-height: 14rem;
   }
 }
 
+@media only screen and (max-width: 900px) { 
+  #team { 
+    .icon {
+      right: 30rem;
+    }
+
+    button {
+      right: 15rem;
+    }
+
+    li {
+      .module-text {
+        width: 35rem;
+      }
+
+      .blue-line {
+        width: 35rem;
+      }
+    }
+
+    li:nth-child(even) {
+      .icon {
+        left: 30rem;
+      }
+
+      button {
+        left: 15rem;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) { 
   #team {
     .icon {
