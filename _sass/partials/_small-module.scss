@@ -7,11 +7,13 @@
 $icon-size: 11rem;
 $module-height: 13rem;
 $module-width: 18%;
-$module-min-width: 13rem;
-$module-padding: 1.5rem;
+$module-min-width: 12rem;
+$module-padding: 2.25rem;
 $module-margin: 0.75rem;
-$module-margin-top: -($icon-size / 2);
-$module-padding-top: ($icon-size / 2);
+//$module-margin-top: -($icon-size / 2);
+//$module-padding-top: ($icon-size / 2);
+$module-margin-top: -($icon-size / 2) + 1;
+$module-padding-top: ($icon-size / 2) - 1;
 $module-text-padding-top: ($icon-size + 1);
 
 
