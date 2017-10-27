@@ -19,7 +19,7 @@ $base-h2-line-height: 2rem;
     font-size: $base-font-size * $xxl-multiplier;
   }
 
-  h1, h2 {
+  h1, h2, h4 {
     font-family: $header-font-family;
     font-weight: normal;
     font-style: italic;
@@ -46,11 +46,9 @@ $base-h2-line-height: 2rem;
 
   h4 {
     font-family: $header-font-family;
-    font-size: $base-font-size * 1.1;
-    font-style: italic;
-    font-weight: normal;
+    font-size: $base-font-size * 1.25 * $xxl-multiplier;
     margin-top: -.5rem;
-    margin-bottom: -.5rem;
+    margin-bottom: -.25rem;
   }
 
   p {
@@ -108,6 +106,9 @@ $base-h2-line-height: 2rem;
     line-height: $base-h2-line-height * $xl-multiplier;
   }
 
+  h4 {
+    font-size: $base-font-size * 1.25 * $xl-multiplier;
+  }
 
   p {
     line-height: $base-line-height * $xl-multiplier;
@@ -145,6 +146,9 @@ $base-h2-line-height: 2rem;
     line-height: $base-h2-line-height;
   }
 
+  h4 {
+    font-size: $base-font-size * 1.25;
+  }
 
   p {
     line-height: $base-line-height;
@@ -287,6 +291,10 @@ $base-h2-line-height: 2rem;
     font-size: $base-h2-size * $sm-multiplier;
     line-height: $base-h2-line-height * $sm-multiplier;
     width: 75vw;
+  }
+
+  h4 {
+    font-size: $base-font-size * 1.25 * $sm-multiplier;
   }
 
   p {
