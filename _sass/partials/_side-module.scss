@@ -87,15 +87,6 @@ $module-text-base-height: 14rem;
         text-align: left;
       }
 
-      /*.module-text:after {
-        content:"";
-        display:block;
-        position:absolute;
-        z-index:-1;
-        top: 2px;
-        border-bottom: 3px solid black;
-      }*/
-
       .blue-line {
         margin-left: auto;
         height: $xxl-px;
@@ -121,6 +112,7 @@ $module-text-base-height: 14rem;
       //p {
       .module-content {
         margin-left: auto;
+        padding-left: 0;
         padding-right: $base-text-padding  * $xxl-multiplier;
       }
 
@@ -200,6 +192,7 @@ $module-text-base-height: 14rem;
     li:nth-child(even) {
       //p {
       .module-content {
+        padding-left: 0;
         padding-right: $base-text-padding  * $xl-multiplier;
       }
 
@@ -279,6 +272,7 @@ $module-text-base-height: 14rem;
     li:nth-child(even) {
       //p {
       .module-content {
+        padding-left: 0;
         padding-right: $base-text-padding;
       }
 
