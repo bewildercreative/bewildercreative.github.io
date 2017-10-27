@@ -43,6 +43,10 @@
       border: $xxl-px solid $navy;
       color: $yellow;
     }
+
+    &:focus {
+      outline: $xxl-px solid $yellow;
+    }
   }
 //}
 
@@ -71,6 +75,10 @@
 
     &:active {
       border: $xl-px solid $navy;
+    }    
+    
+    &:focus {
+      outline: $xl-px solid $yellow;
     }
   }
 }
@@ -101,6 +109,10 @@
     &:active {
       border: $base-px solid $navy;
     }
+
+    &:focus {
+      outline: $base-px solid $yellow;
+    }
   }
 }
 
@@ -129,6 +141,10 @@
 
     &:active {
       border: $sm-px solid $navy;
+    }
+
+    &:focus {
+      outline: $sm-px solid $yellow;
     }
   }
 }
