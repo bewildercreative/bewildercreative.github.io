@@ -196,6 +196,10 @@ $glow-duration: 1.75s;
       background-color: $yellow;
       color: $navy;
   }
+
+  .lightwidget-widget {
+    max-width: 60rem;
+  }
 //}
 
 @media only screen and (max-width: 1920px) {
